@@ -3,10 +3,10 @@ import React from 'react';
 
 export default function StatsGrid() {
   const stats = [
-    { label: "Active MoUs", value: "02+" },
+    { label: "Active MoUs", value: "06+" },
     { label: "Internship Offers", value: "15+" },
-    { label: "Projects Completed", value: "10+" },
-    { label: "Students Placed", value: "08+" },
+    { label: "Projects Completed", value: "15+" },
+    { label: "Students Placed", value: "25+" },
   ];
 
   return (

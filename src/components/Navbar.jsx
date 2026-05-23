@@ -37,8 +37,8 @@ export default function Navbar() {
             alt="Quantum Computing Lab Logo"
           />
           <span className="ml-3 text-white uppercase font-black hidden sm:block text-sm tracking-wide leading-tight">
-            Quantum<br />
-            <span className="text-amber-500">Computing Lab</span>
+            CENTRE FOR<br />
+            <span className="text-amber-500">QUANTUM COMMUNICATION AND COMPUTING</span>
           </span>
         </NavLink>
 

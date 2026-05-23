@@ -5,5 +5,5 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
   ],
-  base: './qcc_website', // Ensures correct asset paths for GitHub Pages deployment
+  base: '/qcc_website', // Ensures correct asset paths for GitHub Pages deployment
 })
