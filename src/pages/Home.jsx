@@ -33,7 +33,7 @@ export default function Home() {
               Centre for quantum communication and computing
             </span> <br />
             <span className="text-xs sm:text-sm lg:text-base tracking-[0.25em] block mt-4 text-amber-100/40 font-mono uppercase">
-              // SRMIST-KTR, Kattankulathur
+             SRMIST-KTR
             </span>
           </h1>
           
