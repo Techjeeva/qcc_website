@@ -134,7 +134,7 @@ export default function About() {
                 "Our lab is not just a facility; it's a launchpad for the next generation of quantum pioneers. We are committed to building a strong foundation in quantum education and research, empowering our students to tackle the world's most complex challenges."
               </blockquote>
               <p className="text-white font-bold text-lg tracking-wide">Dr. M. Pushpalatha</p>
-              <p className="text-amber-500 text-sm font-medium">Professor & Head, Dept. of Computing Technologies</p>
+              <p className="text-amber-500 text-sm font-medium">Professor & Associate Chairperson, Dept. of Computing Technologies</p>
             </div>
           </div>
         </div>
