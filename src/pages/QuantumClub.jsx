@@ -2,9 +2,9 @@
 import React from 'react';
 
 const clubContacts = [
-  { name: "Priya Sharma", role: "President", email: "priya.s@student.srmist.edu.in" },
-  { name: "Arjun Verma", role: "Vice President", email: "arjun.v@student.srmist.edu.in" },
-  { name: "Dr. Bob Williams", role: "Faculty Advisor", email: "bob.w@example.com" },
+  { name: "Tanishq Kumar", role: "President", email: "priya.s@student.srmist.edu.in" },
+  { name: "Shashanka shekhar sharma", role: "Vice President", email: "arjun.v@student.srmist.edu.in" },
+  { name: "Lakshya Malik", role: "Vice President", email: "bob.w@example.com" },
 ];
 
 export default function QuantumClub() {
