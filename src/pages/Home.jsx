@@ -40,12 +40,17 @@ export default function Home() {
           {/* Accent Line Separator */}
           <div className="h-0.5 w-16 bg-gradient-to-r from-transparent via-amber-500 to-transparent mb-12"></div>
 
-          {/* Core Lab Description */}
+          {/* Core Lab Description (Fixed missing word 'Centre') */}
           <p className="text-amber-100/70 text-base sm:text-lg max-w-2xl leading-relaxed font-medium mb-12">
-            The Quantum Communication and Computing at SRMIST serves as a world-class hub 
+            The Centre for Quantum Communication and Computing at SRMIST serves as a world-class hub 
             for investigating next-generation computational paradigms, localized algorithmic 
             frameworks, and secure cryptographic communication channels.
           </p>
+          
+          {/* --- FIXED: Rendered the missing StatsGrid component here --- */}
+          <div className="w-full max-w-5xl px-2 mb-12">
+            <StatsGrid />
+          </div>
           
           {/* --- Pure Metallic Solid CTA Button --- */}
           <Link

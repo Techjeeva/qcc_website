@@ -1,5 +1,5 @@
 // src/App.js
-import React from "react";
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -23,42 +23,27 @@ import Collaborations from './pages/Collaborations';
 import "./App.css"; // Your global styles
 
 function App() {
-  // Automatically detects if the app is hosted inside a GitHub Pages repository subfolder
-  const getBasename = () => {
-    return window.location.hostname.includes("github.io")
-      ? window.location.pathname.split("/")[1]
-      : "";
-  };
-
   return (
-    // Dynamic basename configuration protects root routing on remote staging environments
-    <Router basename={getBasename() ? `/${getBasename()}` : ""}>
-      <div className="flex flex-col min-h-screen relative text-white bg-[#030302]"> 
+    <Router> {/* Enable routing */}
+      <div className="flex flex-col min-h-screen relative"> {/* Base layout */}
         
         {/* --- Global Background Elements --- */}
         <video
-          autoPlay 
-          loop 
-          muted 
-          playsInline
+          autoPlay loop muted playsInline
           src="./quantum_bg_video.mp4" // Path relative to the 'public' folder
-          className="fixed top-0 left-0 w-full h-full object-cover z-0 pointer-events-none" 
+          className="fixed top-0 left-0 w-full h-full object-cover z-0" // Fixed position, lowest layer
           title="Abstract quantum background video"
         ></video>
-        
-        {/* Obsidian-Gold Contrast Dark Matte Overlay Layer */}
-        <div className="fixed top-0 left-0 w-full h-full bg-black/60 backdrop-blur-[1px] z-10 pointer-events-none"></div> 
+        <div className="fixed top-0 left-0 w-full h-full bg-black/50 z-10"></div> {/* Overlay */}
         {/* --- End Global Background Elements --- */}
 
-        {/* Global Reset Systems */}
-        <ScrollToTop /> 
+        <ScrollToTop /> {/* Scrolls viewport to top on route change */}
         
-        {/* Fixed Laboratory Navigation Console */}
-        <Navbar />
-
+        <Navbar />      {/* Always visible Navbar (Ensure it has z-index > 10) */}
         {/* --- Main Content Area --- */}
-        <main className="flex-grow relative z-20 pt-20"> 
-          <Routes> 
+        {/* Pages rendered here based on URL */}
+        <main className="flex-grow relative z-20 pt-20"> {/* pt-20 to offset fixed Navbar height */}
+          <Routes> {/* The router's content switcher */}
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/mous" element={<MoUs />} />
@@ -73,12 +58,12 @@ function App() {
             <Route path="/faculty" element={<Faculty />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/collaborations" element={<Collaborations />} />
+            
           </Routes>
         </main>
         {/* --- End Main Content Area --- */}
 
-        {/* Persistent Structural Footer Element */}
-        <Footer />  
+        <Footer />      {/* Always visible Footer (Ensure it has z-index > 10) */}
       </div>
     </Router>
   );
