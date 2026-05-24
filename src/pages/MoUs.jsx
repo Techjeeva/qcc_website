@@ -6,7 +6,7 @@ export default function MoUs() {
     { name: "Artificial Brain", logo: "./mou/1.png" },
     { name: "C-DAC", logo: "./mou/5.png" },
     { name: "BosonQ Psi", logo: "./mou/4.png" },
-    { name: "Qkrishi", logo: "./mou/6.png" },
+    //{ name: "Qkrishi", logo: "./mou/6.png" },
     { name: "Bhumi ITech", logo: "./mou/3.png" },
     { name: "QNu Labs", logo: "./mou/7.png" },
     { name: "Qrace", logo: "./mou/2.png" },
