@@ -6,47 +6,48 @@ export default function Gallery() {
   const imageData = [
     // --- LAB INFRASTRUCTURE (7 items) ---
     {
-      src: "/gallery/lab-interior-1.jpg",
+      src: "/gallery/Lab Photos/qcclab.jpg",
       alt: "Wide shot of the quantum computing lab workstations",
       caption: "Our State-of-the-Art Research Facility",
       category: "Lab Infrastructure",
     },
     {
-      src: "/gallery/equipment-close-up-1.jpg",
+      src: "/gallery/Lab Photos/qcclab1.jpg",
       alt: "Close-up of the Quantum Eraser development kit setup",
       caption: "Quantum Eraser Demonstration Array",
       category: "Lab Infrastructure",
     },
     {
-      src: "/gallery/lab-interior-2.jpg",
+      src: "/gallery/Lab Photos/qcclab2.jpg",
       alt: "Another view of the lab's dedicated computation racks",
       caption: "Dedicated High-Performance Workstations",
       category: "Lab Infrastructure",
     },
     {
-      src: "/gallery/optical-bench-1.jpg",
+      src: "/gallery/Lab Photos/qcclab3.jpg",
       alt: "Laser alignment on topological quantum optics testbed",
       caption: "Topological Phase Alignment Bench",
       category: "Lab Infrastructure",
     },
     {
-      src: "/gallery/cryo-cooling-1.jpg",
+      src: "/gallery/Lab Photos/qcclab4.jpg",
       alt: "Cryogenic vacuum cooling pump control instrumentation",
       caption: "Superconductive Temperature Controller",
       category: "Lab Infrastructure",
     },
     {
-      src: "/gallery/hardware-node-1.jpg",
+      src: "/gallery/Lab Photos/qcclab5.jpg",
       alt: "Close look at localized quantum key distribution system modules",
       caption: "QKD Peripheral Distribution Node",
       category: "Lab Infrastructure",
     },
     {
-      src: "/gallery/server-stack-1.jpg",
+      src: "/gallery/Lab Photos/qcclab6.jpg",
       alt: "Classical-Quantum hybrid processing server arrays",
       caption: "Co-Processing Simulation Mainframe",
       category: "Lab Infrastructure",
     },
+    
 
     // --- STUDENT LIFE (5 items) ---
     {
