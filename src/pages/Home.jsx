@@ -46,12 +46,7 @@ export default function Home() {
             for investigating next-generation computational paradigms, localized algorithmic 
             frameworks, and secure cryptographic communication channels.
           </p>
-          
-          {/* --- FIXED: Rendered the missing StatsGrid component here --- */}
-          <div className="w-full max-w-5xl px-2 mb-12">
-            <StatsGrid />
-          </div>
-          
+  
           {/* --- Pure Metallic Solid CTA Button --- */}
           <Link
             to="/about" 
