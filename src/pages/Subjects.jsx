@@ -7,30 +7,26 @@ export default function Subjects() {
       groupName: "Foundation Modules",
       items: [
         {
-          code: "21MCS020F",
-          title: "Quantum Computation", // Preserved exact custom entry 1
-          credits: "L: 2 | T: 1 | P: 0 | C: 3",
+          id: "f1",
+          title: "Quantum Computation", // Preserved custom entry 1
           description:
-            "Explore the fundamentals of qubits, superposition, and entanglement to build and understand powerful quantum circuits, quantum gates, and universal computation models. (Official title: Foundations of Quantum Computing: Physics, Engineering, and Mathematics Computing).",
+            "Explore the fundamentals of qubits, superposition, and entanglement to build and understand powerful quantum circuits, quantum gates, and universal computation models. (Foundations of Quantum Computing: Physics, Engineering, and Mathematics Computing).",
         },
         {
-          code: "21MCS021F",
-          title: "Quantum Machine Learning", // Preserved exact custom entry 2
-          credits: "L: 3 | T: 0 | P: 0 | C: 3",
+          id: "f2",
+          title: "Quantum Machine Learning", // Preserved custom entry 2
           description:
-            "Investigate how parameterized quantum circuits and quantum kernels can enhance machine learning pipelines, leading to theoretical performance breakthroughs in pattern recognition, dimensionality reduction, and high-dimensional AI model optimization. (Official title: Survey of Quantum technologies and Applications).",
+            "Investigate how parameterized quantum circuits and quantum kernels can enhance machine learning pipelines, leading to theoretical performance breakthroughs in pattern recognition, dimensionality reduction, and high-dimensional AI model optimization. (Survey of Quantum technologies and Applications).",
         },
         {
-          code: "21MCS022F",
-          title: "Quantum Cryptography", // Preserved exact custom entry 3
-          credits: "L: 2 | T: 1 | P: 0 | C: 3",
+          id: "f3",
+          title: "Quantum Cryptography", // Preserved custom entry 3
           description:
-            "Learn about secure communication protocols like Quantum Key Distribution (QKD) and post-quantum cryptographic primitives that are mathematically and physically provably secure against eavesdropping vectors. (Official title: Foundations of Quantum Technologies).",
+            "Learn about secure communication protocols like Quantum Key Distribution (QKD) and post-quantum cryptographic primitives that are mathematically and physically provably secure against eavesdropping vectors. (Foundations of Quantum Technologies).",
         },
         {
-          code: "21MCS023F",
+          id: "f4",
           title: "Basic Programming Lab",
-          credits: "L: 1 | T: 0 | P: 4 | C: 3",
           description: "Hands-on structural runtime workspace environment targeting low-level quantum simulation libraries, execution of quantum assembly code, and functional SDK application layouts.",
         },
       ],
@@ -39,27 +35,23 @@ export default function Subjects() {
       groupName: "Professional Electives - A",
       items: [
         {
-          code: "21MCS024E",
+          id: "ea1",
           title: "Introduction to Quantum Computation",
-          credits: "L: 2 | T: 1 | P: 0 | C: 3",
           description: "Formal introduction covering multi-qubit systems, density matrices, baseline quantum search routines, and algorithmic acceleration foundations.",
         },
         {
-          code: "21MCS025E",
+          id: "ea2",
           title: "Introduction to Quantum Communication",
-          credits: "L: 2 | T: 1 | P: 0 | C: 3",
           description: "Comprehensive tracking of state teleportation mechanics, entanglement purification layers, and secure information routing architectures across distributed hardware networks.",
         },
         {
-          code: "21MCS026E",
+          id: "ea3",
           title: "Introduction to Quantum Sensing",
-          credits: "L: 3 | T: 0 | P: 0 | C: 3",
           description: "High-precision sensing principles utilizing atomic systems, spin-resonance setups, and phase estimation loops to outpace classical baseline detection bounds.",
         },
         {
-          code: "21MCS027E",
+          id: "ea4",
           title: "Introduction to Quantum Materials",
-          credits: "L: 3 | T: 0 | P: 0 | C: 3",
           description: "Exploration of topological insulators, strongly correlated systems, and crystalline lattice configurations essential for manufacturing reliable physical qubit platforms.",
         },
       ],
@@ -68,39 +60,34 @@ export default function Subjects() {
       groupName: "Professional Electives - B",
       items: [
         {
-          code: "21MCS028E",
+          id: "eb1",
           title: "Basic Laboratory Course for Quantum Technologies",
-          credits: "L: 1 | T: 0 | P: 4 | C: 3",
           description: "Experimental laboratory module detailing physical apparatus alignment, state validation checks, and diagnostic benchmarking of noisy quantum components.",
         },
         {
-          code: "21MCS029E",
+          id: "eb2",
           title: "Engineering Foundations of Quantum Technologies",
-          credits: "L: 2 | T: 1 | P: 0 | C: 3",
           description: "System engineering paradigms encompassing control instrumentation, RF signal mapping, micro-architecture design, and environmental isolation layers.",
         },
         {
-          code: "21MCS030E",
+          id: "eb3",
           title: "Solid State Physics for Quantum Technologies",
-          credits: "L: 3 | T: 0 | P: 0 | C: 3",
           description: "Theoretical frameworks focusing on energy band formations, semiconductor physics, Josephson junctions, and superconducting hardware design matrices.",
         },
         {
-          code: "21MCS031E",
+          id: "eb4",
           title: "Quantum Optics",
-          credits: "L: 3 | T: 0 | P: 0 | C: 3",
           description: "Advanced investigation into quantized electromagnetic fields, single-photon emission pathways, coherent states, and hardware-driven optical computation setups.",
         },
       ],
     },
   ];
 
-  // Flat list mapper for active accordion index control tracking
-  const flatSubjects = curriculumSections.flatMap((section) => section.items);
-  const [openSubjectCode, setOpenSubjectCode] = useState(flatSubjects[0]?.code || null);
+  // Flat mapper for initial open state index selection
+  const [openSubjectId, setOpenSubjectId] = useState("f1");
 
-  const handleToggle = (code) => {
-    setOpenSubjectCode(openSubjectCode === code ? null : code);
+  const handleToggle = (id) => {
+    setOpenSubjectId(openSubjectId === id ? null : id);
   };
 
   return (
@@ -131,34 +118,27 @@ export default function Subjects() {
               {/* Accordion Container Wrapper */}
               <div className="bg-[#0a0904]/40 backdrop-blur-md border border-amber-500/10 rounded-xl overflow-hidden shadow-2xl">
                 {section.items.map((subject) => {
-                  const isOpen = openSubjectCode === subject.code;
+                  const isOpen = openSubjectId === subject.id;
                   return (
                     <div 
-                      key={subject.code} 
+                      key={subject.id} 
                       className="border-b border-amber-900/10 last:border-b-0 transition-colors"
                     >
                       {/* Active Row Header Click Trigger */}
                       <button 
-                        onClick={() => handleToggle(subject.code)}
-                        className="w-full p-5 flex flex-col sm:flex-row sm:items-center justify-between text-left focus:outline-none group transition-all hover:bg-amber-500/[0.02]"
+                        onClick={() => handleToggle(subject.id)}
+                        className="w-full p-5 flex items-center justify-between text-left focus:outline-none group transition-all hover:bg-amber-500/[0.02]"
                       >
-                        <div className="flex items-start gap-4">
-                          {/* Code Tag Unit */}
-                          <div className="mt-0.5 px-2 py-1 rounded bg-amber-500/10 border border-amber-500/20 flex-shrink-0 text-[10px] font-mono font-bold text-amber-400 tracking-wider">
-                            {subject.code}
-                          </div>
-                          <div>
-                            <h4 className="text-base font-bold text-white group-hover:text-amber-400 transition-colors tracking-wide uppercase">
-                              {subject.title}
-                            </h4>
-                            <span className="text-[11px] font-mono text-amber-100/40 uppercase tracking-widest block mt-0.5">
-                              {subject.credits}
-                            </span>
-                          </div>
+                        <div className="flex items-center gap-4">
+                          {/* Minimal high-tech line accent instead of codes */}
+                          <div className={`h-2 w-2 rounded-full transition-all duration-300 ${isOpen ? 'bg-amber-500 shadow-[0_0_8px_#f59e0b]' : 'bg-amber-900/40'}`}></div>
+                          <h4 className="text-base font-bold text-white group-hover:text-amber-400 transition-colors tracking-wide uppercase">
+                            {subject.title}
+                          </h4>
                         </div>
                         
                         {/* Interactive Dynamic Action Chevron */}
-                        <div className="flex-shrink-0 ml-auto mt-3 sm:mt-0 pl-14 sm:pl-0">
+                        <div className="flex-shrink-0 ml-auto">
                           <svg 
                             className={`h-4 w-4 text-amber-400/40 group-hover:text-amber-400 transform transition-transform duration-300 ${
                               isOpen ? 'rotate-180' : 'rotate-0'
@@ -179,7 +159,7 @@ export default function Subjects() {
                           isOpen ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0'
                         }`}
                       >
-                        <div className="pl-[72px] pr-6 pb-5">
+                        <div className="pl-11 pr-6 pb-5">
                           <p className="text-amber-100/60 text-sm leading-relaxed border-l border-amber-500/20 pl-4 font-medium">
                             {subject.description}
                           </p>
