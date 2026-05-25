@@ -27,7 +27,7 @@ export default function Equipments() {
     },
     {
       name: "Quantum Random Number Generator (QRNG) Kit",
-      image: "./equipments/qrng_kit.png",
+      image: "./equipments/qrng.png",
       description:
         "An advanced Quantum Random Number Generator (QRNG) subsystem leveraging vacuum state fluctuations and single-photon split detection paths to harvest true quantum entropy.",
       features: [
@@ -38,7 +38,7 @@ export default function Equipments() {
     },
     {
       name: "Armos QKD Research Platform",
-      image: "./equipments/qkd_fiber.png",
+      image: "./equipments/qkd.png",
       description:
         "A continuous-variable and discrete-variable telecom-band Quantum Key Distribution system engineered to validate phase-encoded security schemas across scalable network grids.",
       features: [
@@ -48,8 +48,8 @@ export default function Equipments() {
       ],
     },
     {
-      name: "TropsLight ",
-      image: "./equipments/topos_light.png",
+      name: "Trops(QRNG)",
+      image: "./equipments/tropos.png",
       description:
         "A high-precision optical prototyping bench focused on mapping spatial light modulations, orbital angular momentum (OAM), and topologically protected quantum states.",
       features: [

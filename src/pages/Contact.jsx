@@ -52,7 +52,7 @@ export default function Contact() {
                   <div>
                     <h4 className="font-bold text-sm text-amber-400 uppercase tracking-wider mb-1">Email</h4>
                     <a href="mailto:quantumlab@srmist.edu.in" className="text-white text-base font-semibold hover:text-amber-400 transition-colors break-all">
-                      quantumlab@srmist.edu.in
+                      {noName}@srmist.edu.in
                     </a>
                   </div>
                 </div>
@@ -132,8 +132,7 @@ export default function Contact() {
           </h3>
           <div className="rounded-xl shadow-2xl overflow-hidden border border-amber-900/30 bg-[#0a0904]/40 p-2">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m13!1d3890.0407833077797!2d80.04169527592471!3d12.82128741846175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f712b8117db9%3A0xc6de9e011681f21a!2sSRM%20Institute%20of%20Science%20and%20Technology!5e0!3m2!1sen!2sin!4v1716389201934!5m2!1sen!2sin"
-              width="100%"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d368.95945039806776!2d80.0449215906066!3d12.824733864263019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f70d1e2bf683%3A0x24a458beb785a1ca!2sDepartment%20of%20computer%20sciences%2CTech%20park%2CSRM!5e1!3m2!1sen!2sin!4v1779682060006!5m2!1sen!2sin"              width="100%"
               height="450"
               style={{ border: 0, filter: 'grayscale(0.6) invert(0.92) contrast(1.1) brightness(0.95)' }}
               allowFullScreen=""
