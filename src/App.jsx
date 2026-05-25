@@ -40,6 +40,7 @@ function App() {
         <ScrollToTop /> {/* Scrolls viewport to top on route change */}
         
         <Navbar />      {/* Always visible Navbar (Ensure it has z-index > 10) */}
+
         {/* --- Main Content Area --- */}
         {/* Pages rendered here based on URL */}
         <main className="flex-grow relative z-20 pt-20"> {/* pt-20 to offset fixed Navbar height */}
