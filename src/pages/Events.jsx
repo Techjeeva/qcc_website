@@ -2,7 +2,7 @@
 import React from 'react';
 
 export default function Events() {
-  // Chronologically balanced real-world historical and upcoming event arrays
+  // Real-world historical milestones (Upcoming arrays intentionally cleared)
   const eventsData = [
     {
       title: "Quantathon 1.0",
@@ -39,24 +39,13 @@ export default function Events() {
       date: "February 9, 2026",
       description: "The third iteration of our signature high-intensity quantum hackathon platform. Teams compete to compile optimal quantum circuits, run algorithmic error-mitigation bakes, and showcase functional deep-tech models.",
       status: "Past",
-    },
-    {
-      title: "International Conference on Post-Quantum Cryptography (ICPQC)",
-      date: "August 12-14, 2026",
-      description: "Bringing global cryptographic pioneers together at SRMIST to deliberate secure network models robust against quantum vulnerabilities.",
-      status: "Upcoming",
-    },
-    {
-      title: "Autumn Immersion: Hybrid Quantum-Classical AI Models",
-      date: "October 05, 2026",
-      description: "A practical exploratory session introducing undergraduate students to variational quantum eigensolvers and modern QNN optimization frameworks.",
-      status: "Upcoming",
     }
   ];
 
+  // Dynamic filter channels
   const upcomingEvents = eventsData.filter((e) => e.status === "Upcoming");
   
-  // Sort past events from newest to oldest for better chronological rendering
+  // Sort past events from newest to oldest for presentation order
   const pastEvents = eventsData.filter((e) => e.status === "Past").reverse();
 
   return (
@@ -74,7 +63,7 @@ export default function Events() {
           </p>
         </div>
 
-        {/* --- UPCOMING ENGAGEMENTS --- */}
+        {/* --- UPCOMING ENGAGEMENTS (Now displays the empty fallback view safely) --- */}
         <div className="mb-24">
           <h3 className="text-2xl font-bold text-amber-400 mb-10 text-center uppercase tracking-widest drop-shadow-[0_0_10px_rgba(251,191,36,0.2)]">
             // UPCOMING ENGAGEMENTS
@@ -98,8 +87,6 @@ export default function Events() {
                       {event.description}
                     </p>
                   </div>
-                  
-                  {/* Card Action Footer */}
                   <div className="bg-[#0f0e08]/60 p-4 border-t border-amber-900/20 text-center">
                     <a
                       href="#"
@@ -113,7 +100,14 @@ export default function Events() {
               ))}
             </div>
           ) : (
-            <p className="text-center text-amber-100/40 italic font-mono text-sm">// NO ACTIVE PENDING TRACKS SCHEDULED AT CURRENT TIME INTERVAL</p>
+            // Premium Gold/Obsidian Fallback Node
+            <div className="bg-[#0a0904]/40 backdrop-blur-md border border-amber-500/5 rounded-xl p-12 text-center max-w-2xl mx-auto relative overflow-hidden">
+              <div className="absolute top-0 left-0 w-2 h-2 border-t border-l border-amber-500/20"></div>
+              <div className="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-amber-500/20"></div>
+              <p className="text-amber-100/40 italic font-mono text-sm tracking-wide">
+                // NO ACTIVE PENDING TRACKS SCHEDULED AT CURRENT TIME INTERVAL
+              </p>
+            </div>
           )}
         </div>
 
@@ -124,7 +118,6 @@ export default function Events() {
           </h3>
           
           <div className="bg-[#0a0904]/40 backdrop-blur-md border border-amber-500/10 rounded-xl shadow-xl p-6 sm:p-10 relative overflow-hidden">
-            {/* Structural high-tech corner accents */}
             <div className="absolute top-0 left-0 w-2 h-2 border-t border-l border-amber-500/30"></div>
             <div className="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-amber-500/30"></div>
 
@@ -141,7 +134,7 @@ export default function Events() {
                       {event.date}
                     </p>
                     <div className="flex-grow">
-                      <h5 className="text-base font-bold text-white uppercase tracking-wide group-hover:text-amber-400 transition-colors">
+                      <h5 className="text-base font-bold text-white uppercase tracking-wide">
                         {event.title}
                       </h5>
                       <p className="text-amber-100/60 text-sm mt-2 leading-relaxed font-medium">
