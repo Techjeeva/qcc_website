@@ -42,7 +42,7 @@ function App() {
         {/* Dark Overlay */}
         <div className="fixed inset-0 bg-black/60 z-10"></div>
 
-        {/* Scroll to top on route change */}
+        {/* Scroll To Top */}
         <ScrollToTop />
 
         {/* Navbar */}
