@@ -94,7 +94,6 @@ export default function Home() {
           <IndustrialVisits />
         </section>
         */}
-        
         {/* Contact Communications Form Grid */}
         <section id="contact" className="border-t border-amber-900/10 pt-16 pb-24 bg-transparent">
           <Contact />
