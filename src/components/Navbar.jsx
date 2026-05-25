@@ -33,7 +33,7 @@ export default function Navbar() {
         <NavLink to="/" className="flex items-center justify-center">
           <img
             className="h-12 sm:h-16"
-            src="https://i.ibb.co/6Yxs70d/2021-10-26-23h27-03.png" // Replace with your logo path if different
+            src="./logo/qcc_logo.png" 
             alt="Quantum Computing Lab Logo"
           />
           <span className="ml-3 text-white uppercase font-black hidden sm:block">
