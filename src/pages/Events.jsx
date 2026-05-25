@@ -2,68 +2,62 @@
 import React from 'react';
 
 export default function Events() {
-  // Chronologically balanced event data for May 2026
+  // Chronologically balanced real-world historical and upcoming event arrays
   const eventsData = [
     {
-      title: "Advanced Workshop on Quantum Error Correction",
-      date: "November 22, 2025",
-      description:
-        "A deep-dive workshop for graduate students and researchers focusing on the latest techniques to build fault-tolerant quantum systems.",
+      title: "Quantathon 1.0",
+      date: "August 18-19, 2023",
+      description: "The inaugural 24-hour quantum engineering hackathon driving introductory algorithmic models and circuit design implementations among student cohorts.",
       status: "Past",
     },
     {
-      title: "Quantum Hackathon 2026",
-      date: "January 15-17, 2026",
-      description:
-        "Join us for our annual 48-hour hackathon. Form teams, solve challenging quantum problems, and win exciting prizes. Open to all students.",
+      title: "Basics of Quantum Computing & CSI/IEEE Symposium Lectures",
+      date: "July 29 - August 28, 2024",
+      description: "Prof. Amlan visited the SRMIST-KTR campus to deliver a keynote at the Computer Society India Symposium 2024 (CSIS) hosted by CTech & IEEE. He conducted intensive 8-hour core runtime training sessions for technical vertical faculty and initiated specialized collaborative research tracks.",
       status: "Past",
     },
     {
-      title: "Guest Lecture: Dr. A. S. Kumar, IBM Quantum",
-      date: "September 5, 2025",
-      description:
-        "Dr. Kumar shared invaluable insights from his pioneering work at IBM's quantum research division.",
+      title: "Quantathon 2.0",
+      date: "October 14-18, 2024",
+      description: "Our secondary advanced-tier multi-day hackathon sprint targeting deep localized quantum processing loops, quantum machine learning variants, and optimization frameworks.",
       status: "Past",
     },
     {
-      title: "Quantum Bootcamp 2025 – Hands-on with Qiskit",
-      date: "August 18-22, 2025",
-      description:
-        "An immersive week-long bootcamp where students learned to build and run quantum circuits using IBM's Qiskit framework.",
+      title: "National Level Seminar on Quantum Cryptography and Secure Communication",
+      date: "February 26-27, 2025",
+      description: "An intensive national gathering addressing post-quantum cryptographic primitives, sub-atomic security distribution, and infrastructure protocols robust against quantum computing decryption frameworks.",
       status: "Past",
     },
     {
-      title: "Student Innovation Challenge",
-      date: "July 2025",
-      description:
-        "Students presented novel quantum solutions to real-world problems.",
+      title: "Two Day Conclave on Quantum Computing and its Applications",
+      date: "February 27-28, 2025",
+      description: "A comprehensive academic and industry-aligned conclave investigating real-world computational integrations, quantum hardware state management, and emerging vertical applications.",
       status: "Past",
     },
     {
-      title: "Quantum Research Symposium 2025",
-      date: "June 2025",
-      description:
-        "A collaborative event with IIT Madras, showcasing the latest research.",
+      title: "Quantathon 3.0",
+      date: "February 9, 2026",
+      description: "The third iteration of our signature high-intensity quantum hackathon platform. Teams compete to compile optimal quantum circuits, run algorithmic error-mitigation bakes, and showcase functional deep-tech models.",
       status: "Past",
     },
     {
       title: "International Conference on Post-Quantum Cryptography (ICPQC)",
       date: "August 12-14, 2026",
-      description:
-        "Bringing global cryptographic pioneers together at SRMIST to deliberate secure network models robust against quantum vulnerabilities.",
+      description: "Bringing global cryptographic pioneers together at SRMIST to deliberate secure network models robust against quantum vulnerabilities.",
       status: "Upcoming",
     },
     {
       title: "Autumn Immersion: Hybrid Quantum-Classical AI Models",
       date: "October 05, 2026",
-      description:
-        "A practical exploratory session introducing undergraduate students to variational quantum eigensolvers and modern QNN optimization frameworks.",
+      description: "A practical exploratory session introducing undergraduate students to variational quantum eigensolvers and modern QNN optimization frameworks.",
       status: "Upcoming",
     }
   ];
 
   const upcomingEvents = eventsData.filter((e) => e.status === "Upcoming");
-  const pastEvents = eventsData.filter((e) => e.status === "Past");
+  
+  // Sort past events from newest to oldest for better chronological rendering
+  const pastEvents = eventsData.filter((e) => e.status === "Past").reverse();
 
   return (
     <section id="events" className="py-20 px-4 min-h-screen">
@@ -74,17 +68,16 @@ export default function Events() {
           <h2 className="text-4xl font-black mb-4 text-white uppercase tracking-tight">
             Workshops & Events
           </h2>
-          <div className="h-1 w-16 bg-amber-500 mx-auto mb-6 rounded-full"></div>
-          <p className="text-lg text-amber-100/70 leading-relaxed">
-            We host a variety of premium events to foster learning, collaboration, and
-            high-impact innovation within the quantum computing community.
+          <div className="h-0.5 w-16 bg-gradient-to-r from-transparent via-amber-500 to-transparent mx-auto mb-6"></div>
+          <p className="text-base text-amber-100/70 leading-relaxed">
+            Tracking active engagements, legacy symposiums, and breakthrough research initiatives organized by the Centre for Quantum Communication and Computing at SRMIST.
           </p>
         </div>
 
-        {/* --- UPCOMING EVENTS SECTION --- */}
+        {/* --- UPCOMING ENGAGEMENTS --- */}
         <div className="mb-24">
           <h3 className="text-2xl font-bold text-amber-400 mb-10 text-center uppercase tracking-widest drop-shadow-[0_0_10px_rgba(251,191,36,0.2)]">
-            Upcoming Engagements
+            // UPCOMING ENGAGEMENTS
           </h3>
           
           {upcomingEvents.length > 0 ? (
@@ -95,10 +88,10 @@ export default function Events() {
                   className="bg-[#0a0904]/70 backdrop-blur-md border border-amber-900/30 rounded-xl shadow-xl overflow-hidden flex flex-col group hover:border-amber-500/40 hover:shadow-amber-500/5 transition-all duration-300 transform hover:-translate-y-0.5"
                 >
                   <div className="p-8 flex-grow">
-                    <p className="text-amber-400 font-bold text-xs uppercase tracking-wider mb-2">
+                    <p className="text-amber-400 font-bold text-xs uppercase tracking-wider mb-2 font-mono">
                       {event.date}
                     </p>
-                    <h4 className="text-xl font-bold text-white mb-3 group-hover:text-amber-400 transition-colors duration-200">
+                    <h4 className="text-xl font-bold text-white mb-3 group-hover:text-amber-400 transition-colors duration-200 uppercase tracking-tight">
                       {event.title}
                     </h4>
                     <p className="text-amber-100/70 text-sm leading-relaxed">
@@ -110,9 +103,9 @@ export default function Events() {
                   <div className="bg-[#0f0e08]/60 p-4 border-t border-amber-900/20 text-center">
                     <a
                       href="#"
-                      className="text-amber-400 font-bold text-xs uppercase tracking-wider hover:text-amber-300 transition-colors flex items-center justify-center gap-1.5"
+                      className="text-amber-400 font-bold text-xs uppercase tracking-wider hover:text-amber-300 transition-colors flex items-center justify-center gap-1.5 font-mono"
                     >
-                      Learn More & Register 
+                      Initialize Registration 
                       <span className="text-sm">→</span>
                     </a>
                   </div>
@@ -120,42 +113,46 @@ export default function Events() {
               ))}
             </div>
           ) : (
-            <p className="text-center text-amber-100/40 italic">No upcoming events scheduled at this moment.</p>
+            <p className="text-center text-amber-100/40 italic font-mono text-sm">// NO ACTIVE PENDING TRACKS SCHEDULED AT CURRENT TIME INTERVAL</p>
           )}
         </div>
 
-        {/* --- PAST EVENTS SECTION --- */}
+        {/* --- ARCHIVED SYMPOSIUMS --- */}
         <div>
-          <h3 className="text-2xl font-bold text-amber-100/50 mb-10 text-center uppercase tracking-widest">
-            Archived Symposiums
+          <h3 className="text-2xl font-bold text-amber-100/40 mb-10 text-center uppercase tracking-widest">
+            // ARCHIVED HISTORICAL REGISTRY
           </h3>
           
-          <div className="bg-[#0a0904]/70 backdrop-blur-md border border-amber-900/30 rounded-xl shadow-xl p-8 sm:p-10">
+          <div className="bg-[#0a0904]/40 backdrop-blur-md border border-amber-500/10 rounded-xl shadow-xl p-6 sm:p-10 relative overflow-hidden">
+            {/* Structural high-tech corner accents */}
+            <div className="absolute top-0 left-0 w-2 h-2 border-t border-l border-amber-500/30"></div>
+            <div className="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-amber-500/30"></div>
+
             {pastEvents.length > 0 ? (
-              <ul className="divide-y divide-amber-900/20 space-y-6">
+              <div className="divide-y divide-amber-900/20 space-y-6">
                 {pastEvents.map((event, index) => (
-                  <li
+                  <div
                     key={index}
-                    className={`flex flex-col sm:flex-row items-start sm:items-center pb-6 ${
+                    className={`flex flex-col md:flex-row items-start md:items-start gap-4 md:gap-8 pb-6 ${
                       index !== 0 ? "pt-6" : ""
                     }`}
                   >
-                    <p className="font-bold text-xs text-amber-500/60 uppercase tracking-wider w-full sm:w-48 mb-2 sm:mb-0 flex-shrink-0">
+                    <p className="font-bold text-xs text-amber-500 font-mono uppercase tracking-wider w-full md:w-56 mt-1 flex-shrink-0">
                       {event.date}
                     </p>
                     <div className="flex-grow">
-                      <h5 className="text-lg font-bold text-amber-100 group-hover:text-amber-400 transition-colors">
+                      <h5 className="text-base font-bold text-white uppercase tracking-wide group-hover:text-amber-400 transition-colors">
                         {event.title}
                       </h5>
-                      <p className="text-amber-100/50 text-sm mt-1 leading-relaxed">
+                      <p className="text-amber-100/60 text-sm mt-2 leading-relaxed font-medium">
                         {event.description}
                       </p>
                     </div>
-                  </li>
+                  </div>
                 ))}
-              </ul>
+              </div>
             ) : (
-              <p className="text-center text-amber-100/40 italic">No historical records available.</p>
+              <p className="text-center text-amber-100/40 italic font-mono text-xs">// EMPTY REGISTRY LAYER</p>
             )}
           </div>
         </div>
