@@ -2,234 +2,203 @@
 import React, { useState } from "react";
 
 export default function Subjects() {
-  const subjectsData = [
+  const curriculumSections = [
     {
-      title: "Quantum Computation",
-      description:
-        "Explore the fundamentals of qubits, superposition, and entanglement to build and understand powerful quantum circuits, quantum gates, and universal computation models.",
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-5 w-5 text-amber-400 group-hover:text-amber-300 transition-colors"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          strokeWidth={2.5}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2 1m0 0l-2-1m2 1V2M4 7l2 1M4 7l2-1M4 7v2.5M12 21.5v-2.5M12 18l-2 1m2-1l2 1m-2-1v-2.5"
-          />
-        </svg>
-      ),
+      groupName: "Foundation Modules",
+      items: [
+        {
+          code: "21MCS020F",
+          title: "Quantum Computation", // Preserved exact custom entry 1
+          credits: "L: 2 | T: 1 | P: 0 | C: 3",
+          description:
+            "Explore the fundamentals of qubits, superposition, and entanglement to build and understand powerful quantum circuits, quantum gates, and universal computation models. (Official title: Foundations of Quantum Computing: Physics, Engineering, and Mathematics Computing).",
+        },
+        {
+          code: "21MCS021F",
+          title: "Quantum Machine Learning", // Preserved exact custom entry 2
+          credits: "L: 3 | T: 0 | P: 0 | C: 3",
+          description:
+            "Investigate how parameterized quantum circuits and quantum kernels can enhance machine learning pipelines, leading to theoretical performance breakthroughs in pattern recognition, dimensionality reduction, and high-dimensional AI model optimization. (Official title: Survey of Quantum technologies and Applications).",
+        },
+        {
+          code: "21MCS022F",
+          title: "Quantum Cryptography", // Preserved exact custom entry 3
+          credits: "L: 2 | T: 1 | P: 0 | C: 3",
+          description:
+            "Learn about secure communication protocols like Quantum Key Distribution (QKD) and post-quantum cryptographic primitives that are mathematically and physically provably secure against eavesdropping vectors. (Official title: Foundations of Quantum Technologies).",
+        },
+        {
+          code: "21MCS023F",
+          title: "Basic Programming Lab",
+          credits: "L: 1 | T: 0 | P: 4 | C: 3",
+          description: "Hands-on structural runtime workspace environment targeting low-level quantum simulation libraries, execution of quantum assembly code, and functional SDK application layouts.",
+        },
+      ],
     },
     {
-      title: "Quantum Machine Learning",
-      description:
-        "Investigate how parameterized quantum circuits and quantum kernels can enhance machine learning pipelines, leading to theoretical performance breakthroughs in pattern recognition, dimensionality reduction, and high-dimensional AI model optimization.",
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-5 w-5 text-amber-400 group-hover:text-amber-300 transition-colors"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          strokeWidth={2.5}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M12 6V4m0 16v-2M12 12l-2-2m2 2l2-2m2 2l-2-2m-2 2l2 2"
-          />
-        </svg>
-      ),
+      groupName: "Professional Electives - A",
+      items: [
+        {
+          code: "21MCS024E",
+          title: "Introduction to Quantum Computation",
+          credits: "L: 2 | T: 1 | P: 0 | C: 3",
+          description: "Formal introduction covering multi-qubit systems, density matrices, baseline quantum search routines, and algorithmic acceleration foundations.",
+        },
+        {
+          code: "21MCS025E",
+          title: "Introduction to Quantum Communication",
+          credits: "L: 2 | T: 1 | P: 0 | C: 3",
+          description: "Comprehensive tracking of state teleportation mechanics, entanglement purification layers, and secure information routing architectures across distributed hardware networks.",
+        },
+        {
+          code: "21MCS026E",
+          title: "Introduction to Quantum Sensing",
+          credits: "L: 3 | T: 0 | P: 0 | C: 3",
+          description: "High-precision sensing principles utilizing atomic systems, spin-resonance setups, and phase estimation loops to outpace classical baseline detection bounds.",
+        },
+        {
+          code: "21MCS027E",
+          title: "Introduction to Quantum Materials",
+          credits: "L: 3 | T: 0 | P: 0 | C: 3",
+          description: "Exploration of topological insulators, strongly correlated systems, and crystalline lattice configurations essential for manufacturing reliable physical qubit platforms.",
+        },
+      ],
     },
     {
-      title: "Quantum Cryptography",
-      description:
-        "Learn about secure communication protocols like Quantum Key Distribution (QKD) and post-quantum cryptographic primitives that are mathematically and physically provably secure against eavesdropping vectors.",
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-5 w-5 text-amber-400 group-hover:text-amber-300 transition-colors"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          strokeWidth={2.5}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 20.417l5.5-5.5a8.034 8.034 0 011.59-1.03m5.422-3.322a8.003 8.003 0 01-1.59 1.03l5.5 5.5c1.5-3.033 1.83-6.356.88-9.417z"
-          />
-        </svg>
-      ),
-    },
-    {
-      title: "Elective: Quantum Communication & Networks",
-      description:
-        "An advanced study into quantum teleportation, entanglement swapping, quantum repeaters, and the critical engineering protocols required to deploy a distributed, global scale quantum internet framework.",
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-5 w-5 text-amber-400 group-hover:text-amber-300 transition-colors"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          strokeWidth={2.5}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M8 12h.01M12 12h.01M16 12h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-          />
-        </svg>
-      ),
-    },
-    {
-      title: "Elective: Variational Quantum Algorithms",
-      description:
-        "Focuses on practical NISQ-era algorithms including Variational Quantum Eigensolvers (VQE) and Quantum Approximate Optimization Algorithms (QAOA) tailored for commercial chemistry and optimization tracks.",
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-5 w-5 text-amber-400 group-hover:text-amber-300 transition-colors"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          strokeWidth={2.5}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M11 3.055A9.003 9.003 0 1020.945 13H11V3.055z"
-          />
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"
-          />
-        </svg>
-      ),
-    },
-    {
-      title: "Elective: Fault-Tolerant Architecture",
-      description:
-        "Analyze surface codes, color codes, and error mitigation procedures designed to isolate processing nodes from physical environmental decoherence, driving progress toward large-scale logical qubit processors.",
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-5 w-5 text-amber-400 group-hover:text-amber-300 transition-colors"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          strokeWidth={2.5}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
-          />
-        </svg>
-      ),
-    },
-    {
-      title: "More Advanced Modules Coming Soon",
-      description:
-        "Our academic roadmap dynamically scales each term to integrate groundbreaking developments across physical hardware platforms and quantum error mitigation protocols.",
-      status: "coming-soon",
+      groupName: "Professional Electives - B",
+      items: [
+        {
+          code: "21MCS028E",
+          title: "Basic Laboratory Course for Quantum Technologies",
+          credits: "L: 1 | T: 0 | P: 4 | C: 3",
+          description: "Experimental laboratory module detailing physical apparatus alignment, state validation checks, and diagnostic benchmarking of noisy quantum components.",
+        },
+        {
+          code: "21MCS029E",
+          title: "Engineering Foundations of Quantum Technologies",
+          credits: "L: 2 | T: 1 | P: 0 | C: 3",
+          description: "System engineering paradigms encompassing control instrumentation, RF signal mapping, micro-architecture design, and environmental isolation layers.",
+        },
+        {
+          code: "21MCS030E",
+          title: "Solid State Physics for Quantum Technologies",
+          credits: "L: 3 | T: 0 | P: 0 | C: 3",
+          description: "Theoretical frameworks focusing on energy band formations, semiconductor physics, Josephson junctions, and superconducting hardware design matrices.",
+        },
+        {
+          code: "21MCS031E",
+          title: "Quantum Optics",
+          credits: "L: 3 | T: 0 | P: 0 | C: 3",
+          description: "Advanced investigation into quantized electromagnetic fields, single-photon emission pathways, coherent states, and hardware-driven optical computation setups.",
+        },
+      ],
     },
   ];
 
-  const [openIndex, setOpenIndex] = useState(0);
-  const handleToggle = (index) => setOpenIndex(openIndex === index ? null : index);
+  // Flat list mapper for active accordion index control tracking
+  const flatSubjects = curriculumSections.flatMap((section) => section.items);
+  const [openSubjectCode, setOpenSubjectCode] = useState(flatSubjects[0]?.code || null);
+
+  const handleToggle = (code) => {
+    setOpenSubjectCode(openSubjectCode === code ? null : code);
+  };
 
   return (
-    <section id="subjects" className="py-20 px-4 min-h-screen">
-      <div className="container mx-auto">
+    <section id="subjects" className="py-20 px-4 min-h-screen relative z-20">
+      <div className="container mx-auto max-w-4xl">
         
-        {/* Section Header */}
+        {/* --- SECTION HEADER --- */}
         <div className="text-center max-w-3xl mx-auto mb-20">
           <h2 className="text-4xl font-black mb-4 text-white uppercase tracking-tight">
-            Core Subjects & Electives
+            Curriculum Structure
           </h2>
-          <div className="h-1 w-16 bg-amber-500 mx-auto mb-6 rounded-full"></div>
-          <p className="text-lg text-amber-100/70 leading-relaxed">
-            Our specialized curriculum provides a comprehensive modern understanding of 
-            theoretical foundations and active hands-on development paradigms.
+          <div className="h-0.5 w-16 bg-gradient-to-r from-transparent via-amber-500 to-transparent mx-auto mb-6"></div>
+          <p className="text-base text-amber-100/70 leading-relaxed">
+            Specialized structural course routing framework approved for the Centre of Excellence, yielding a cumulative total of <span className="text-amber-400 font-bold">18 learning credits</span>.
           </p>
         </div>
 
-        {/* --- Accordion Gold Glassmorphism Box --- */}
-        <div className="max-w-3xl mx-auto bg-[#0a0904]/70 backdrop-blur-md border border-amber-900/30 rounded-xl shadow-2xl overflow-hidden">
-          {subjectsData.map((subject, index) => (
-            <div 
-              key={index} 
-              className="border-b border-amber-900/20 last:border-b-0 transition-colors"
-            >
-              {subject.status === "coming-soon" ? (
-                
-                /* Coming Soon Row Layout */
-                <div className="p-6 flex items-center opacity-40 select-none bg-black/10">
-                  <div className="w-10 h-10 rounded-lg bg-amber-500/5 border border-amber-500/20 flex-shrink-0 flex items-center justify-center mr-5 shadow-inner">
-                    <span className="text-xl font-bold text-amber-400">+</span>
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-bold text-amber-100/60 uppercase tracking-wide">
-                      {subject.title}
-                    </h3>
-                  </div>
-                </div>
-              ) : (
-                
-                /* Interactive Accordion Row Layout */
-                <>
-                  <button 
-                    onClick={() => handleToggle(index)}
-                    className="w-full p-6 flex items-center justify-between text-left focus:outline-none group transition-all hover:bg-amber-500/[0.02]"
-                  >
-                    <div className="flex items-center mr-4">
-                      <div className="w-10 h-10 rounded-lg bg-amber-500/10 border border-amber-500/30 flex-shrink-0 flex items-center justify-center mr-5 group-hover:border-amber-500/60 transition-all shadow-md">
-                        {subject.icon}
-                      </div>
-                      <h3 className="text-lg font-bold text-white group-hover:text-amber-400 transition-colors tracking-wide">
-                        {subject.title}
-                      </h3>
-                    </div>
-                    
-                    {/* Animated Chevron Arrow */}
-                    <div className="flex-shrink-0 ml-2">
-                      <svg 
-                        className={`h-5 w-5 text-amber-400/60 group-hover:text-amber-400 transform transition-transform duration-300 ${
-                          openIndex === index ? 'rotate-180' : 'rotate-0'
-                        }`} 
-                        fill="none" 
-                        viewBox="0 0 24 24" 
-                        stroke="currentColor" 
-                        strokeWidth={2.5}
-                      >
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-                      </svg>
-                    </div>
-                  </button>
+        {/* --- CURRICULUM SECTIONS --- */}
+        <div className="space-y-12">
+          {curriculumSections.map((section, sIdx) => (
+            <div key={sIdx} className="space-y-4">
+              
+              {/* Category Header Label */}
+              <h3 className="text-xs font-black uppercase tracking-[0.25em] text-amber-400/80 font-mono pl-2">
+                // {section.groupName}
+              </h3>
 
-                  {/* Collapsible content with dynamic height transition */}
-                  <div 
-                    className={`transition-all duration-300 ease-in-out overflow-hidden ${
-                      openIndex === index ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0'
-                    }`}
-                  >
-                    <div className="pl-21 pr-8 pb-6">
-                      <p className="text-amber-100/70 text-sm leading-relaxed border-l-2 border-amber-500/20 pl-4">
-                        {subject.description}
-                      </p>
+              {/* Accordion Container Wrapper */}
+              <div className="bg-[#0a0904]/40 backdrop-blur-md border border-amber-500/10 rounded-xl overflow-hidden shadow-2xl">
+                {section.items.map((subject) => {
+                  const isOpen = openSubjectCode === subject.code;
+                  return (
+                    <div 
+                      key={subject.code} 
+                      className="border-b border-amber-900/10 last:border-b-0 transition-colors"
+                    >
+                      {/* Active Row Header Click Trigger */}
+                      <button 
+                        onClick={() => handleToggle(subject.code)}
+                        className="w-full p-5 flex flex-col sm:flex-row sm:items-center justify-between text-left focus:outline-none group transition-all hover:bg-amber-500/[0.02]"
+                      >
+                        <div className="flex items-start gap-4">
+                          {/* Code Tag Unit */}
+                          <div className="mt-0.5 px-2 py-1 rounded bg-amber-500/10 border border-amber-500/20 flex-shrink-0 text-[10px] font-mono font-bold text-amber-400 tracking-wider">
+                            {subject.code}
+                          </div>
+                          <div>
+                            <h4 className="text-base font-bold text-white group-hover:text-amber-400 transition-colors tracking-wide uppercase">
+                              {subject.title}
+                            </h4>
+                            <span className="text-[11px] font-mono text-amber-100/40 uppercase tracking-widest block mt-0.5">
+                              {subject.credits}
+                            </span>
+                          </div>
+                        </div>
+                        
+                        {/* Interactive Dynamic Action Chevron */}
+                        <div className="flex-shrink-0 ml-auto mt-3 sm:mt-0 pl-14 sm:pl-0">
+                          <svg 
+                            className={`h-4 w-4 text-amber-400/40 group-hover:text-amber-400 transform transition-transform duration-300 ${
+                              isOpen ? 'rotate-180' : 'rotate-0'
+                            }`} 
+                            fill="none" 
+                            viewBox="0 0 24 24" 
+                            stroke="currentColor" 
+                            strokeWidth={2.5}
+                          >
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                          </svg>
+                        </div>
+                      </button>
+
+                      {/* Expandable Meta Panel Drawer */}
+                      <div 
+                        className={`transition-all duration-300 ease-in-out overflow-hidden ${
+                          isOpen ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0'
+                        }`}
+                      >
+                        <div className="pl-[72px] pr-6 pb-5">
+                          <p className="text-amber-100/60 text-sm leading-relaxed border-l border-amber-500/20 pl-4 font-medium">
+                            {subject.description}
+                          </p>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </>
-              )}
+                  );
+                })}
+              </div>
             </div>
           ))}
+        </div>
+
+        {/* --- MANDATORY REQUIREMENT DISCLOSURE PLATE --- */}
+        <div className="mt-12 bg-[#0a0904]/20 border border-amber-500/5 rounded-xl p-5 relative overflow-hidden max-w-4xl mx-auto">
+          <div className="absolute top-0 left-0 w-1 h-full bg-amber-500/40"></div>
+          <p className="text-amber-100/40 font-mono text-xs leading-relaxed tracking-wide uppercase pl-2">
+            * Elective Selection Constraint Matrix: Completion dictates fulfilling either (i) two tracks from Professional Elective-A series, or (ii) one track from Professional Elective-A paired with one track from Professional Elective-B series.
+          </p>
         </div>
 
       </div>

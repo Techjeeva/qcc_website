@@ -69,11 +69,11 @@ export default function Home() {
           <Collaborations />
         </section>
         
-        {/* Achievements Segment Plate */}
+        {/* Achievements Segment Plate 
         <section id="achievements" className="border-t border-amber-900/10 py-16 bg-transparent">
           <Achievements />
         </section>
-        
+        */}
         {/* Equipment Inventory Segment Plate */}
         <section id="equipments" className="border-t border-amber-900/10 py-16 bg-transparent">
           <Equipments />

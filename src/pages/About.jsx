@@ -32,8 +32,8 @@ export default function About() {
       )
     },
     {
-      title: "Quantum Error Correction",
-      description: "Investigating fault-tolerant quantum computing by designing codes to protect qubits from noise and decoherence.",
+      title: "Quantum secure communication networks",
+      description: "Investigating Quantum secure communication networks in the context of quantum computing by designing codes to protect qubits from noise and decoherence.",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 20.417l5.5-5.5a8.034 8.034 0 011.59-1.03m5.422-3.322a8.003 8.003 0 01-1.59 1.03l5.5 5.5c1.5-3.033 1.83-6.356.88-9.417z" />
