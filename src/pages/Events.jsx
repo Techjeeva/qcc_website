@@ -66,7 +66,7 @@ export default function Events() {
         {/* --- UPCOMING ENGAGEMENTS (Now displays the empty fallback view safely) --- */}
         <div className="mb-24">
           <h3 className="text-2xl font-bold text-amber-400 mb-10 text-center uppercase tracking-widest drop-shadow-[0_0_10px_rgba(251,191,36,0.2)]">
-            // UPCOMING ENGAGEMENTS
+           UPCOMING ENGAGEMENTS
           </h3>
           
           {upcomingEvents.length > 0 ? (
@@ -105,7 +105,7 @@ export default function Events() {
               <div className="absolute top-0 left-0 w-2 h-2 border-t border-l border-amber-500/20"></div>
               <div className="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-amber-500/20"></div>
               <p className="text-amber-100/40 italic font-mono text-sm tracking-wide">
-                // NO ACTIVE PENDING TRACKS SCHEDULED AT CURRENT TIME INTERVAL
+               NO ACTIVE PENDING TRACKS SCHEDULED AT CURRENT TIME INTERVAL
               </p>
             </div>
           )}
@@ -114,7 +114,7 @@ export default function Events() {
         {/* --- ARCHIVED SYMPOSIUMS --- */}
         <div>
           <h3 className="text-2xl font-bold text-amber-100/40 mb-10 text-center uppercase tracking-widest">
-            // ARCHIVED HISTORICAL REGISTRY
+           ARCHIVED HISTORICAL REGISTRY
           </h3>
           
           <div className="bg-[#0a0904]/40 backdrop-blur-md border border-amber-500/10 rounded-xl shadow-xl p-6 sm:p-10 relative overflow-hidden">
@@ -145,7 +145,7 @@ export default function Events() {
                 ))}
               </div>
             ) : (
-              <p className="text-center text-amber-100/40 italic font-mono text-xs">// EMPTY REGISTRY LAYER</p>
+              <p className="text-center text-amber-100/40 italic font-mono text-xs"> EMPTY REGISTRY LAYER</p>
             )}
           </div>
         </div>
