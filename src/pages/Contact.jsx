@@ -51,8 +51,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-bold text-sm text-amber-400 uppercase tracking-wider mb-1">Email</h4>
-                    <a href="mailto:quantumlab@srmist.edu.in" className="text-white text-base font-semibold hover:text-amber-400 transition-colors break-all">
-                      {noName}@srmist.edu.in
+                    <a href="mailto:srmqcc@gmail.com" className="text-white text-base font-semibold hover:text-amber-400 transition-colors break-all">
+                     srmqcc@gmail.com
                     </a>
                   </div>
                 </div>
@@ -64,8 +64,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-bold text-sm text-amber-400 uppercase tracking-wider mb-1">Phone</h4>
-                    <a href="tel:+914427455510" className="text-white text-base font-semibold hover:text-amber-400 transition-colors">
-                      +91-44-2745 5510
+                    <a href="tel:+918011922099" className="text-white text-base font-semibold hover:text-amber-400 transition-colors">
+                      +918011922099
                     </a>
                   </div>
                 </div>
@@ -93,7 +93,7 @@ export default function Contact() {
                 <div>
                   <label htmlFor="email" className="text-xs font-bold uppercase tracking-wider text-amber-100/50">Email Address</label>
                   <input 
-                    type="type" 
+                    type="email" 
                     id="email" 
                     name="email" 
                     required
