@@ -3,7 +3,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import ScrollToTop from "./components/ScrollToTop"; // Utility to scroll up on page change
+import ScrollToTop from "./components/ScrollToTop"; 
 
 // Import all your page components
 import Home from "./pages/Home";
@@ -20,30 +20,35 @@ import Faculty from "./pages/Faculty";
 import Contact from "./pages/Contact";
 import QuantumClub from "./pages/QuantumClub";
 import Collaborations from './pages/Collaborations';
-import "./App.css"; // Your global styles
+import "./App.css"; 
 
 function App() {
+  // Simple check to find the repository name automatically on GitHub Pages
+  const repoName = window.location.hostname.includes("github.io")
+    ? `/${window.location.pathname.split("/")[1]}`
+    : "";
+
   return (
-    <Router> {/* Enable routing */}
-      <div className="flex flex-col min-h-screen relative"> {/* Base layout */}
+    <Router basename={repoName}> {/* Dynamic fallback for seamless subfolder routing */}
+      <div className="flex flex-col min-h-screen relative"> 
         
         {/* --- Global Background Elements --- */}
         <video
           autoPlay loop muted playsInline
-          src="./quantum_bg_video.mp4" // Path relative to the 'public' folder
-          className="fixed top-0 left-0 w-full h-full object-cover z-0" // Fixed position, lowest layer
+          src="./quantum_bg_video.mp4" 
+          className="fixed top-0 left-0 w-full h-full object-cover z-0" 
           title="Abstract quantum background video"
         ></video>
-        <div className="fixed top-0 left-0 w-full h-full bg-black/50 z-10"></div> {/* Overlay */}
+        <div className="fixed top-0 left-0 w-full h-full bg-black/50 z-10"></div> 
         {/* --- End Global Background Elements --- */}
 
-        <ScrollToTop /> {/* Scrolls viewport to top on route change */}
+        <ScrollToTop /> 
         
-        <Navbar />      {/* Always visible Navbar (Ensure it has z-index > 10) */}
+        <Navbar />      
+
         {/* --- Main Content Area --- */}
-        {/* Pages rendered here based on URL */}
-        <main className="flex-grow relative z-20 pt-20"> {/* pt-20 to offset fixed Navbar height */}
-          <Routes> {/* The router's content switcher */}
+        <main className="flex-grow relative z-20 pt-20"> 
+          <Routes> 
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/mous" element={<MoUs />} />
@@ -58,12 +63,11 @@ function App() {
             <Route path="/faculty" element={<Faculty />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/collaborations" element={<Collaborations />} />
-            
           </Routes>
         </main>
         {/* --- End Main Content Area --- */}
 
-        <Footer />      {/* Always visible Footer (Ensure it has z-index > 10) */}
+        <Footer />      
       </div>
     </Router>
   );

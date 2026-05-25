@@ -16,7 +16,7 @@ export default function Navbar() {
     { to: '/quantumclub', label: 'QuantumClub' },
   ];
 
-  // FIXED: Converted active status handler into clean, reliable Tailwind class strings
+  // Converted active status handler into clean, reliable Tailwind class strings
   const getNavLinkClass = ({ isActive }) => {
     return `py-2 transition-all duration-300 tracking-wide text-sm ${
       isActive 
@@ -41,7 +41,7 @@ export default function Navbar() {
         <NavLink to="/" className="flex items-center justify-center group">
           <img
             className="h-12 sm:h-14 w-auto object-contain transition-transform group-hover:scale-105"
-            src="./logo/qcc_logo.png" 
+            src="/logo/qcc_logo.png" // FIXED: Removed the dot to use root-relative asset pathing
             alt="Quantum Computing Lab Logo"
           />
           <span className="ml-3 text-white uppercase font-black hidden sm:block text-xs tracking-wide leading-tight">
