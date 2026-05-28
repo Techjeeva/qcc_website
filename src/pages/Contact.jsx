@@ -37,7 +37,7 @@ export default function Contact() {
                   <div>
                     <h4 className="font-bold text-sm text-amber-400 uppercase tracking-wider mb-1">Address</h4>
                     <p className="text-amber-100/70 text-sm leading-relaxed">
-                      Centre for Quantum Communication and Computing, Dept. of Computing Technologies<br />
+                      Center for Quantum Communication and Computing, Dept. of Computing Technologies<br />
                       SRM Institute of Science and Technology<br />
                       Kattankulathur, Chengalpattu, Tamil Nadu – 603203
                     </p>

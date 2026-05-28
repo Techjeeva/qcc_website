@@ -23,7 +23,7 @@ export default function Footer() {
                 alt="Quantum Computing Lab Logo"
               />
               <span className="ml-4 text-white font-black text-xl leading-tight">
-                CENTRE FOR<br />
+                CENTER FOR<br />
                 <span className="text-amber-500">QUANTUM COMMUNICATION AND COMPUTING</span>
               </span>
             </NavLink>
@@ -89,7 +89,7 @@ export default function Footer() {
         {/* Bottom Bar: Copyright & Social Media */}
         <div className="mt-16 pt-8 border-t border-amber-900/30 flex flex-col sm:flex-row justify-between items-center text-xs tracking-wide text-amber-100/40">
           <p className="mb-4 sm:mb-0">
-            © {new Date().getFullYear()} Centre for Quantum Communication and Computing – SRMIST. <span className="hidden sm:inline">|</span> <span className="text-amber-500/50">ADVANCING THE FUTURE.</span>
+            © {new Date().getFullYear()} Center for Quantum Communication and Computing – SRMIST. <span className="hidden sm:inline">|</span> <span className="text-amber-500/50">ADVANCING THE FUTURE.</span>
           </p>
           
           <div className="flex space-x-6">

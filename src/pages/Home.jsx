@@ -23,14 +23,14 @@ export default function Home() {
           
           {/* Top Tag Component */}
           <span className="uppercase text-amber-400 text-xs font-black mb-5 block tracking-[0.3em] drop-shadow-[0_0_12px_rgba(251,191,36,0.4)]">
-            Centre of Excellence
+            Center of Excellence
           </span>
           
           {/* Main Integrated Heading */}
           <h1 className="text-white font-black text-4xl sm:text-5xl lg:text-6xl mb-6 uppercase tracking-tight max-w-4xl leading-[1.15]">
             Welcome to the <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 via-amber-200 to-amber-400 drop-shadow-[0_2px_15px_rgba(251,191,36,0.3)]">
-              Centre for quantum communication and computing
+              Center for quantum communication and computing
             </span> <br />
             <span className="text-xs sm:text-sm lg:text-base tracking-[0.25em] block mt-4 text-amber-100/40 font-mono uppercase">
              SRMIST-KTR
@@ -40,9 +40,9 @@ export default function Home() {
           {/* Accent Line Separator */}
           <div className="h-0.5 w-16 bg-gradient-to-r from-transparent via-amber-500 to-transparent mb-12"></div>
 
-          {/* Core Lab Description (Fixed missing word 'Centre') */}
+          {/* Core Lab Description (Fixed missing word 'Center') */}
           <p className="text-amber-100/70 text-base sm:text-lg max-w-2xl leading-relaxed font-medium mb-12">
-            The Centre for Quantum Communication and Computing at SRMIST serves as a world-class hub 
+            The Center for Quantum Communication and Computing at SRMIST serves as a world-class hub 
             for investigating next-generation computational paradigms, localized algorithmic 
             frameworks, and secure cryptographic communication channels.
           </p>

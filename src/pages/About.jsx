@@ -61,7 +61,7 @@ export default function About() {
             </h2>
             <div className="h-1 w-16 bg-amber-500 mb-6 rounded-full"></div>
             <p className="text-lg text-amber-100/80 mb-4 leading-relaxed">
-              The <strong className="text-amber-400 font-bold">SRMIST Centre for Quantum Communication and Computing (SQ|QuIC)</strong> was established in partnership with <strong className="text-amber-400 font-bold">Qkrishi Quantum Private Limited</strong>.
+              The <strong className="text-amber-400 font-bold">SRMIST Center for Quantum Communication and Computing (SQ|QuIC)</strong> was established in partnership with <strong className="text-amber-400 font-bold">Qkrishi Quantum Private Limited</strong>.
             </p>
             <p className="text-amber-100/70 mb-6 leading-relaxed">
               Officially inaugurated on <strong className="text-amber-400">September 9, 2022</strong>, the center is led by Dr. M. Pushpalatha, Professor and Associate Chairperson of the Department of Computing Technologies. As an early adopter of quantum technology in India, SRMIST has integrated specialized elective courses like "Quantum Computation" and "Quantum Machine Learning" into its undergraduate curriculum.

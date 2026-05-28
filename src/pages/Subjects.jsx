@@ -101,7 +101,7 @@ export default function Subjects() {
           </h2>
           <div className="h-0.5 w-16 bg-gradient-to-r from-transparent via-amber-500 to-transparent mx-auto mb-6"></div>
           <p className="text-base text-amber-100/70 leading-relaxed">
-            Specialized structural course routing framework approved for the Centre of Excellence, yielding a cumulative total of <span className="text-amber-400 font-bold">18 learning credits</span>.
+            Specialized structural course routing framework approved for the Center of Excellence, yielding a cumulative total of <span className="text-amber-400 font-bold">18 learning credits</span>.
           </p>
         </div>
 

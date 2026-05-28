@@ -59,7 +59,7 @@ export default function Events() {
           </h2>
           <div className="h-0.5 w-16 bg-gradient-to-r from-transparent via-amber-500 to-transparent mx-auto mb-6"></div>
           <p className="text-base text-amber-100/70 leading-relaxed">
-            Tracking active engagements, legacy symposiums, and breakthrough research initiatives organized by the Centre for Quantum Communication and Computing at SRMIST.
+            Tracking active engagements, legacy symposiums, and breakthrough research initiatives organized by the Center for Quantum Communication and Computing at SRMIST.
           </p>
         </div>
 
