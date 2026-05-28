@@ -1,10 +1,11 @@
 // src/App.js
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTop from "./components/ScrollToTop"; // Utility to scroll up on page change
 
-// Import all page components
+// Import all your page components
 import Home from "./pages/Home";
 import About from "./pages/About";
 import MoUs from "./pages/MoUs";
@@ -19,39 +20,31 @@ import Faculty from "./pages/Faculty";
 import Contact from "./pages/Contact";
 import QuantumClub from "./pages/QuantumClub";
 import Collaborations from './pages/Collaborations';
-import "./App.css";
+import "./App.css"; // Your global styles
 
 function App() {
-  const repoName = window.location.hostname.includes("https://techjeeva.github.io/qcc_website/")
-    ? `/${window.location.pathname.split("/")[1]}`
-    : "";
-
   return (
-    <Router basename={repoName}>
-      <div className="flex flex-col min-h-screen relative text-white bg-black">
+    <Router> {/* Enable routing */}
+      <div className="flex flex-col min-h-screen relative"> {/* Base layout */}
         
         {/* --- Global Background Elements --- */}
         <video
           autoPlay loop muted playsInline
-          src="/quantum_bg_video.mp4" 
-          className="fixed top-0 left-0 w-full h-full object-cover z-0 pointer-events-none"
+          src="./quantum_bg_video.mp4" // Path relative to the 'public' folder
+          className="fixed top-0 left-0 w-full h-full object-cover z-0" // Fixed position, lowest layer
           title="Abstract quantum background video"
         ></video>
-        <div className="fixed top-0 left-0 w-full h-full bg-[#050503]/80 z-10 pointer-events-none"></div>
+        <div className="fixed top-0 left-0 w-full h-full bg-black/50 z-10"></div> {/* Overlay */}
+        {/* --- End Global Background Elements --- */}
 
-        <ScrollToTop />
-        <Navbar /> 
+        <ScrollToTop /> {/* Scrolls viewport to top on route change */}
         
+        <Navbar />      {/* Always visible Navbar (Ensure it has z-index > 10) */}
         {/* --- Main Content Area --- */}
-        <main className="flex-grow relative z-20 pt-20"> 
-          <Routes> 
-            {/* Standard landing setup */}
-            <Route path="/" element={<Home />} />
-            
-            {/* Fallback support in case a link explicitly goes to /home */}
-            <Route path="/home" element={<Navigate to="/" replace />} />
-            
-            {/* Standalone sub-page routing mapping */}
+        {/* Pages rendered here based on URL */}
+        <main className="flex-grow relative z-20 pt-20"> {/* pt-20 to offset fixed Navbar height */}
+          <Routes> {/* The router's content switcher */}
+            <Route path="/home" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/mous" element={<MoUs />} />
             <Route path="/quantumclub" element={<QuantumClub />} />
@@ -66,12 +59,11 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/collaborations" element={<Collaborations />} />
             
-            {/* Direct broken routing paths home safely */}
-            <Route path="*" element={<Home />} />
           </Routes>
         </main>
+        {/* --- End Main Content Area --- */}
 
-        <Footer /> 
+        <Footer />      {/* Always visible Footer (Ensure it has z-index > 10) */}
       </div>
     </Router>
   );
