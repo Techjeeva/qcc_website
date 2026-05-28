@@ -30,7 +30,7 @@ function App() {
         {/* --- Global Background Elements --- */}
         <video
           autoPlay loop muted playsInline
-          src="./quantum_bg_video.mp4" // Path relative to the 'public' folder
+          src="/qcc_website/quantum_bg_video.mp4" // Path relative to the 'public' folder
           className="fixed top-0 left-0 w-full h-full object-cover z-0" // Fixed position, lowest layer
           title="Abstract quantum background video"
         ></video>
@@ -44,7 +44,7 @@ function App() {
         {/* Pages rendered here based on URL */}
         <main className="flex-grow relative z-20 pt-20"> {/* pt-20 to offset fixed Navbar height */}
           <Routes> {/* The router's content switcher */}
-            <Route path="/home" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/mous" element={<MoUs />} />
             <Route path="/quantumclub" element={<QuantumClub />} />
