@@ -38,7 +38,7 @@ export default function Equipments() {
     },
     {
       name: "Armos QKD Research Platform",
-      image: "./equipments/qkd.png",
+      image: "./equipments/qkd.jpg",
       description:
         "A continuous-variable and discrete-variable telecom-band Quantum Key Distribution system engineered to validate phase-encoded security schemas across scalable network grids.",
       features: [
@@ -49,7 +49,7 @@ export default function Equipments() {
     },
     {
       name: "Trops(QRNG)",
-      image: "./equipments/tropos.png",
+      image: "./equipments/tropos.webp",
       description:
         "A high-precision optical prototyping bench focused on mapping spatial light modulations, orbital angular momentum (OAM), and topologically protected quantum states.",
       features: [
