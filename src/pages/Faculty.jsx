@@ -25,8 +25,8 @@ export default function Faculty() {
       title: "Lab Programmer",
       role: "Programmer",
       department: "Dept. of Computing Technologies",
-      image: "https://via.placeholder.com/150/0a0904/fbbf24?text=Mr.+Jeevanandam", 
-      email: "jeevanandam.d@example.com", 
+      image: "./faculty/Jeevanandam.JPG", 
+      email: "jeevanad@srmist.edu.in", 
     },
     {
       name: "Dr. Thilagavathy R",
