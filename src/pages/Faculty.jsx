@@ -8,7 +8,7 @@ export default function Faculty() {
       title: "Professor and Associate Chairperson",
       role: "Head",
       specialization: "Quantum Computing, Wireless Networks, Internet of Things and Data Analytics, Edge Computing",
-      image: "./faculty/Pushpalatha.png", 
+      image: "public/faculty/Pushpalatha.png", 
       email: "pushpalm@srmist.edu.in", 
     },
     {
