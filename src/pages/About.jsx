@@ -50,7 +50,7 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20 bg-[#0a0904]/70 backdrop-blur-md border border-amber-900/30 p-8 rounded-xl shadow-xl">
           <div className="order-2 lg:order-1">
             <img 
-              src="./gallery/qc_lab_photo.jpg" 
+              src="/gallery/qc_lab_photo.jpg" 
               alt="Quantum Computing Laboratory interior" 
               className="rounded-lg shadow-2xl w-full h-auto object-cover border-2 border-amber-900/20"
             />
