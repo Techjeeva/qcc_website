@@ -24,7 +24,7 @@ import "./App.css"; // Your global styles
 
 function App() {
   return (
-    <Router> {/* Enable routing */}
+    <Router basename="/qcc_website"> {/* Enable routing */}
       <div className="flex flex-col min-h-screen relative"> {/* Base layout */}
         
         {/* --- Global Background Elements --- */}
