@@ -2,7 +2,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 
 export default function Gallery() {
-  // Quantitatively structured collection: 7 Infrastructure, 5 Student Life, 8 Workshops, 7 Achievements
   const imageData = [
     // --- LAB INFRASTRUCTURE (7 items) ---
     {
@@ -47,35 +46,34 @@ export default function Gallery() {
       caption: "Co-Processing Simulation Mainframe",
       category: "Lab Infrastructure",
     },
-    
 
     // --- STUDENT LIFE (5 items) ---
     {
-      src: "./images/student-collaboration-1.jpg",
+      src: "./images/student life/image7.jpg",
       alt: "Students collaborating on a quantum circuit block layout",
       caption: "Collaborative Research in Action",
       category: "Student Life",
     },
     {
-      src: "./images/student-presentation-1.jpg",
+      src: "./images/student life/image8.jpg",
       alt: "A student presenting their algorithmic research findings",
       caption: "Student Research Symposium Presentation",
       category: "Student Life",
     },
     {
-      src: "./images/peer-review-1.jpg",
+      src: "./images/student life/image9.jpg",
       alt: "Scholars analyzing quantum circuit compilation errors on monitor",
       caption: "Circuit Optimization Peer Analysis",
       category: "Student Life",
     },
     {
-      src: "../images/lab-discussion-1.jpg",
+      src: "./images/student life/image12.jpg",
       alt: "Group brainstorm around blackboard regarding quantum mechanics",
       caption: "Weekly Algorithmic Framework Ideation",
       category: "Student Life",
     },
     {
-      src: "./images/breakroom-talk-1.jpg",
+      src: "./images/student life/image7.jpg",
       alt: "Informal post-graduate technical discussion inside the research center",
       caption: "Interdisciplinary Scholar Networking",
       category: "Student Life",
@@ -129,6 +127,26 @@ export default function Gallery() {
       alt: "Live streaming session with global network security engineers",
       caption: "International Post-Quantum Cryptography Sync",
       category: "Events & Workshops",
+    },
+
+    // --- INDUSTRIAL VISITS (3 items) ---
+    {
+      src: "./images/Industrial Visits/visit1.jpg",
+      alt: "Students and faculty visiting a national quantum research laboratory",
+      caption: "National Laboratory Infrastructure Briefing",
+      category: "Industrial Visits",
+    },
+    {
+      src: "./images/Industrial Visits/visit2.jpg",
+      alt: "Group observing industrial supercomputing nodes on-site",
+      caption: "Industrial Supercomputing Center Tour",
+      category: "Industrial Visits",
+    },
+    {
+      src: "./images/Industrial Visits/visit3.jpg",
+      alt: "Interaction session with enterprise quantum hardware engineers",
+      caption: "Enterprise Hardware Division Engagement",
+      category: "Industrial Visits",
     },
 
     // --- ACHIEVEMENTS (7 items) ---
@@ -240,7 +258,7 @@ export default function Gallery() {
             <div className="h-0.5 w-16 bg-gradient-to-r from-transparent via-amber-500 to-transparent mx-auto mb-6"></div>
             <p className="text-base text-amber-100/70 leading-relaxed">
               Step inside our world. A premium repository showcasing our laboratory's 
-              infrastructure, student-led breakthroughs, and active technical workshops.
+              infrastructure, student-led breakthroughs, industrial exposure, and active technical workshops.
             </p>
           </div>
 
@@ -256,7 +274,7 @@ export default function Gallery() {
                     : 'bg-[#0a0904]/50 text-amber-100/70 hover:bg-amber-950/30 hover:text-amber-400 border border-amber-900/30' 
                 }`}
               >
-                {category === 'All' ? '// Show All' : category}
+                {category === 'All' ? 'Show All' : category}
               </button>
             ))}
           </div>
@@ -284,7 +302,7 @@ export default function Gallery() {
                 <div className="absolute inset-0 bg-gradient-to-t from-[#050402]/95 via-black/30 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-300 flex items-end">
                   <div className="p-5 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300 w-full">
                     <span className="text-[10px] font-black uppercase tracking-widest text-amber-400 block mb-1 drop-shadow-[0_0_5px_rgba(251,191,36,0.5)] font-mono">
-                      // {image.category}
+                      {image.category}
                     </span>
                     <p className="text-white font-bold text-base leading-tight uppercase tracking-wide">
                       {image.caption}
@@ -323,7 +341,7 @@ export default function Gallery() {
             {/* Context Meta Block */}
             <div className="p-5 bg-[#0a0904] border-t border-amber-900/30 text-center">
               <span className="text-xs font-bold uppercase tracking-widest text-amber-500 block mb-1 font-mono">
-                // {currentLightboxImage.category}
+                {currentLightboxImage.category}
               </span>
               <h4 className="text-lg font-bold text-amber-100 uppercase tracking-wide">
                 {currentLightboxImage.caption}
