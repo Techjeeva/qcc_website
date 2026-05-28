@@ -5,7 +5,7 @@ export default function Faculty() {
   const teamMembers = [
     {
       name: "Dr. Pushpalatha M",
-      title: "Professor and Associate Chairperson",
+      title: "Professor and Associate Chairperson, SOC",
       role: "Head",
       specialization: "Quantum Computing, Wireless Networks, Internet of Things and Data Analytics, Edge Computing",
       image: "./faculty/Pushpalatha.png", 
