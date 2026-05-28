@@ -19,7 +19,7 @@ export default function Footer() {
             <NavLink to="/" className="flex items-center mb-6 group">
               <img
                 className="h-14 w-auto object-contain transition-transform group-hover:scale-105"
-                src="./logo/qcc_logo.png" 
+                src="./logo/cqcc_logo.png" 
                 alt="Quantum Computing Lab Logo"
               />
               <span className="ml-4 text-white font-black text-xl leading-tight">
