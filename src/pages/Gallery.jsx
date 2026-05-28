@@ -6,43 +6,43 @@ export default function Gallery() {
   const imageData = [
     // --- LAB INFRASTRUCTURE (7 items) ---
     {
-      src: "/gallery/Lab Photos/qcclab.jpg",
+      src: "./images/Lab Photos/qcclab.jpg",
       alt: "Wide shot of the quantum computing lab workstations",
       caption: "Our State-of-the-Art Research Facility",
       category: "Lab Infrastructure",
     },
     {
-      src: "/gallery/Lab Photos/qcclab1.jpg",
+      src: "./images/Lab Photos/qcclab1.jpg",
       alt: "Close-up of the Quantum Eraser development kit setup",
       caption: "Quantum Eraser Demonstration Array",
       category: "Lab Infrastructure",
     },
     {
-      src: "/gallery/Lab Photos/qcclab2.jpg",
+      src: "./images/Lab Photos/qcclab2.jpg",
       alt: "Another view of the lab's dedicated computation racks",
       caption: "Dedicated High-Performance Workstations",
       category: "Lab Infrastructure",
     },
     {
-      src: "/gallery/Lab Photos/qcclab3.jpg",
+      src: "./images/Lab Photos/qcclab3.jpg",
       alt: "Laser alignment on topological quantum optics testbed",
       caption: "Topological Phase Alignment Bench",
       category: "Lab Infrastructure",
     },
     {
-      src: "/gallery/Lab Photos/qcclab4.jpg",
+      src: "./images/Lab Photos/qcclab4.jpg",
       alt: "Cryogenic vacuum cooling pump control instrumentation",
       caption: "Superconductive Temperature Controller",
       category: "Lab Infrastructure",
     },
     {
-      src: "/gallery/Lab Photos/qcclab5.jpg",
+      src: "./images/Lab Photos/qcclab5.jpg",
       alt: "Close look at localized quantum key distribution system modules",
       caption: "QKD Peripheral Distribution Node",
       category: "Lab Infrastructure",
     },
     {
-      src: "/gallery/Lab Photos/qcclab6.jpg",
+      src: "./images/Lab Photos/qcclab6.jpg",
       alt: "Classical-Quantum hybrid processing server arrays",
       caption: "Co-Processing Simulation Mainframe",
       category: "Lab Infrastructure",
@@ -51,31 +51,31 @@ export default function Gallery() {
 
     // --- STUDENT LIFE (5 items) ---
     {
-      src: "/gallery/student-collaboration-1.jpg",
+      src: "./images/student-collaboration-1.jpg",
       alt: "Students collaborating on a quantum circuit block layout",
       caption: "Collaborative Research in Action",
       category: "Student Life",
     },
     {
-      src: "/gallery/student-presentation-1.jpg",
+      src: "./images/student-presentation-1.jpg",
       alt: "A student presenting their algorithmic research findings",
       caption: "Student Research Symposium Presentation",
       category: "Student Life",
     },
     {
-      src: "/gallery/peer-review-1.jpg",
+      src: "./images/peer-review-1.jpg",
       alt: "Scholars analyzing quantum circuit compilation errors on monitor",
       caption: "Circuit Optimization Peer Analysis",
       category: "Student Life",
     },
     {
-      src: "/gallery/lab-discussion-1.jpg",
+      src: "../images/lab-discussion-1.jpg",
       alt: "Group brainstorm around blackboard regarding quantum mechanics",
       caption: "Weekly Algorithmic Framework Ideation",
       category: "Student Life",
     },
     {
-      src: "/gallery/breakroom-talk-1.jpg",
+      src: "./images/breakroom-talk-1.jpg",
       alt: "Informal post-graduate technical discussion inside the research center",
       caption: "Interdisciplinary Scholar Networking",
       category: "Student Life",
@@ -83,49 +83,49 @@ export default function Gallery() {
 
     // --- EVENTS & WORKSHOPS (8 items) ---
     {
-      src: "/gallery/event-workshop-1.jpg",
+      src: "./images/event-workshop-1.jpg",
       alt: "Students participating in a hands-on Qiskit workshop",
       caption: "Hands-on Qiskit Software Boot Camp",
       category: "Events & Workshops",
     },
     {
-      src: "/gallery/guest-lecture-1.jpg",
+      src: "./images/guest-lecture-1.jpg",
       alt: "Guest lecture presentation from an international industry expert",
       caption: "Industry Expert General Guest Lecture",
       category: "Events & Workshops",
     },
     {
-      src: "/gallery/conclave-panel-1.jpg",
+      src: "./images/conclave-panel-1.jpg",
       alt: "Panelists speaking at the Quantum Applications Conclave",
       caption: "Two-Day Conclave Research Panel",
       category: "Events & Workshops",
     },
     {
-      src: "/gallery/cryptography-seminar-1.jpg",
+      src: "./images/cryptography-seminar-1.jpg",
       alt: "Audience watching technical presentation on secure quantum keys",
       caption: "National Seminar on Quantum Cryptography",
       category: "Events & Workshops",
     },
     {
-      src: "/gallery/prof-amlan-talk-1.jpg",
+      src: "./images/prof-amlan-talk-1.jpg",
       alt: "Professor Amlan delivering core lecture to vertical faculty members",
       caption: "Prof. Amlan Core Technical Lecture Series",
       category: "Events & Workshops",
     },
     {
-      src: "/gallery/ieee-symposium-1.jpg",
+      src: "./images/ieee-symposium-1.jpg",
       alt: "Group photograph from Computer Society India Symposium event",
       caption: "CSI / IEEE Computer Society Symposium",
       category: "Events & Workshops",
     },
     {
-      src: "/gallery/hackathon-kickoff-1.jpg",
+      src: "./images/hackathon-kickoff-1.jpg",
       alt: "Organizers addressing students at the opening of Quantathon",
       caption: "Quantathon Main Arena Kickoff Session",
       category: "Events & Workshops",
     },
     {
-      src: "/gallery/virtual-webinar-1.jpg",
+      src: "./images/virtual-webinar-1.jpg",
       alt: "Live streaming session with global network security engineers",
       caption: "International Post-Quantum Cryptography Sync",
       category: "Events & Workshops",
@@ -133,43 +133,43 @@ export default function Gallery() {
 
     // --- ACHIEVEMENTS (7 items) ---
     {
-      src: "/gallery/award-ceremony-1.jpg",
+      src: "./images/award-ceremony-1.jpg",
       alt: "Students receiving an award shield at a tech competition",
       caption: "Quantathon 1.0 Championship Winners",
       category: "Achievements",
     },
     {
-      src: "/gallery/award-ceremony-2.jpg",
+      src: "./images/award-ceremony-2.jpg",
       alt: "Team holding cash prize cheque at Quantathon 2.0 finale",
       caption: "Quantathon 2.0 Grand Finale Winners",
       category: "Achievements",
     },
     {
-      src: "/gallery/patent-filing-1.jpg",
+      src: "./images/patent-filing-1.jpg",
       alt: "Certificate displaying a breakthrough research publication recognition",
       caption: "High-Impact Cryptographic Patent Filing",
       category: "Achievements",
     },
     {
-      src: "/gallery/grant-approval-1.jpg",
+      src: "./images/grant-approval-1.jpg",
       alt: "Faculty members posing with institutional funding grant notification",
       caption: "National Research Funding Endowment Award",
       category: "Achievements",
     },
     {
-      src: "/gallery/ieee-best-paper-1.jpg",
+      src: "./images/ieee-best-paper-1.jpg",
       alt: "Researcher accepting best paper presentation certificate at summit",
       caption: "IEEE Best Research Paper Distinction",
       category: "Achievements",
     },
     {
-      src: "/gallery/global-hack-win-1.jpg",
+      src: "./images/global-hack-win-1.jpg",
       alt: "SRMIST students holding international hackathon trophies",
       caption: "Global Quantum Hackathon Laurels",
       category: "Achievements",
     },
     {
-      src: "/gallery/quantathon-3-winners.jpg",
+      src: "./images/quantathon-3-winners.jpg",
       alt: "Winning team celebrating at Quantathon 3.0 award stage",
       caption: "Quantathon 3.0 Core Category Champions",
       category: "Achievements",
