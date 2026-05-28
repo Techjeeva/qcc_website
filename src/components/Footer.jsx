@@ -4,8 +4,8 @@ import { NavLink } from "react-router-dom";
 export default function Footer() {
   const partnerLogos = [
     { src: "./logo/srm_logo.png", alt: "SRMIST Logo", href: "https://www.srmist.edu.in/" },
-    { src: "./logo/qkrishi_logo.png", alt: "Qkrishi Logo", href: "https://qkrishi.com/" },
-    { src: "./logo/dst_logo.png", alt: "DST Logo", href: "https://dst.gov.in/" },
+    { src: "./logo/soc_logo.png", alt: "SCHOOL OF COMPUTING Logo", href: "https://www.srmist.edu.in/college/college-of-engineering-technology/" },
+    { src: "./logo/ctech_logo.png", alt: "DEPT. OF COMPUTING TECHNOLOGIES Logo", href: "https://www.srmist.edu.in/department/department-of-computing-technologies/" },
   ];
 
   return (
