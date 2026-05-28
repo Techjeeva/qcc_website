@@ -44,7 +44,7 @@ export default function Navbar() {
             src="./logo/cqcc_logo.png" 
             alt="Quantum Computing Lab Logo"
           />
-          <span className="ml-3 text-white uppercase font-black hidden sm:block text-xs tracking-wide leading-tight">
+          <span className="ml-3 text-white uppercase font-black hidden sm:block text-2xl tracking-wide leading-tight">
             C<span className="text-amber-500">QCC</span>
           </span>
         </NavLink>
