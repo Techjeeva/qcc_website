@@ -25,7 +25,7 @@ export default function Faculty() {
       title: "Lab Programmer",
       role: "Programmer",
       department: "Dept. of Computing Technologies",
-      image: "./faculty/Jeevanandam.JPG", 
+      image: "./faculty/Jeevanandam.jpg", 
       email: "jeevanad@srmist.edu.in", 
     },
     {
