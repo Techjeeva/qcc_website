@@ -44,7 +44,7 @@ function App() {
         {/* Pages rendered here based on URL */}
         <main className="flex-grow relative z-20 pt-20"> {/* pt-20 to offset fixed Navbar height */}
           <Routes> {/* The router's content switcher */}
-            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/mous" element={<MoUs />} />
             <Route path="/quantumclub" element={<QuantumClub />} />

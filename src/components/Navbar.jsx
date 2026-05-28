@@ -7,7 +7,7 @@ export default function Navbar() {
 
   // Define navigation links for the router
   const navLinks = [
-    { to: '/', label: 'Home' },
+    { to: '/home', label: 'Home' },
     { to: '/about', label: 'About' },
     { to: '/projects', label: 'Projects' },
     { to: '/gallery', label: 'Gallery' },
@@ -38,7 +38,7 @@ export default function Navbar() {
       <div className="container mx-auto flex items-center justify-between h-20 px-4">
         
         {/* Logo links to Home */}
-        <NavLink to="/" className="flex items-center justify-center group">
+        <NavLink to="/home" className="flex items-center justify-center group">
           <img
             className="h-12 sm:h-14 w-auto object-contain transition-transform group-hover:scale-105"
             src="./logo/qcc_logo.png" 
