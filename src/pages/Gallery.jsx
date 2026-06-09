@@ -11,7 +11,7 @@ export default function Gallery() {
       category: "Lab Infrastructure",
     },
     {
-      src: "./images/Lab Photos/qcclab1.jpg",
+      src: "./images/Lab Photos/qcclab4.jpg",
       alt: "Close-up of the Quantum Eraser development kit setup",
       caption: "Quantum Eraser Demonstration Array",
       category: "Lab Infrastructure",
@@ -29,7 +29,7 @@ export default function Gallery() {
       category: "Lab Infrastructure",
     },
     {
-      src: "./images/Lab Photos/qcclab4.jpg",
+      src: "./images/Lab Photos/qcclab1.jpg",
       alt: "Cryogenic vacuum cooling pump control instrumentation",
       caption: "Superconductive Temperature Controller",
       category: "Lab Infrastructure",
@@ -81,31 +81,31 @@ export default function Gallery() {
 
     // --- EVENTS & WORKSHOPS (8 items) ---
     {
-      src: "./images/event-workshop-1.jpg",
+      src: "./images/events and Hackthon Photo/event1.jpg",
       alt: "Students participating in a hands-on Qiskit workshop",
       caption: "Hands-on Qiskit Software Boot Camp",
       category: "Events & Workshops",
     },
     {
-      src: "./images/guest-lecture-1.jpg",
+      src: "./images/events and Hackthon Photo/event3.jpg",
       alt: "Guest lecture presentation from an international industry expert",
       caption: "Industry Expert General Guest Lecture",
       category: "Events & Workshops",
     },
     {
-      src: "./images/conclave-panel-1.jpg",
+      src: "./images/events and Hackthon Photo/event4.jpg",
       alt: "Panelists speaking at the Quantum Applications Conclave",
       caption: "Two-Day Conclave Research Panel",
       category: "Events & Workshops",
     },
     {
-      src: "./images/cryptography-seminar-1.jpg",
+      src: "./images/events and Hackthon Photo/seminor Photo/event5.jpeg",
       alt: "Audience watching technical presentation on secure quantum keys",
       caption: "National Seminar on Quantum Cryptography",
       category: "Events & Workshops",
     },
     {
-      src: "./images/prof-amlan-talk-1.jpg",
+      src: "./images/events and Hackthon Photo/seminor Photo/event1.jpeg",
       alt: "Professor Amlan delivering core lecture to vertical faculty members",
       caption: "Prof. Amlan Core Technical Lecture Series",
       category: "Events & Workshops",
@@ -131,24 +131,29 @@ export default function Gallery() {
 
     // --- INDUSTRIAL VISITS (3 items) ---
     {
-      src: "./images/Industrial Visits/visit1.jpg",
+      src: "./images/Lab Visits Photo/labv1.jpg",
       alt: "Students and faculty visiting a national quantum research laboratory",
       caption: "National Laboratory Infrastructure Briefing",
       category: "Industrial Visits",
     },
     {
-      src: "./images/Industrial Visits/visit2.jpg",
+      src: "./images/Lab Visits Photo/labv2.jpg",
       alt: "Group observing industrial supercomputing nodes on-site",
       caption: "Industrial Supercomputing Center Tour",
       category: "Industrial Visits",
     },
     {
-      src: "./images/Industrial Visits/visit3.jpg",
+      src: "./images/Lab Visits Photo/labv6.jpg",
       alt: "Interaction session with enterprise quantum hardware engineers",
       caption: "Enterprise Hardware Division Engagement",
       category: "Industrial Visits",
     },
-
+    {
+      src: "./images/Lab Visits Photo/labv7.jpg",
+      alt: "Interaction session with enterprise quantum hardware engineers",
+      caption: "Enterprise Hardware Division Engagement",
+      category: "Industrial Visits",
+    },
     // --- ACHIEVEMENTS (7 items) ---
     {
       src: "./images/award-ceremony-1.jpg",
