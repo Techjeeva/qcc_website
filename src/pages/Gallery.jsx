@@ -7,43 +7,36 @@ export default function Gallery() {
     {
       src: "./images/Lab Photos/qcclab.jpg",
       alt: "Wide shot of the quantum computing lab workstations",
-      caption: "Our State-of-the-Art Research Facility",
       category: "Lab Infrastructure",
     },
     {
       src: "./images/Lab Photos/qcclab4.jpg",
       alt: "Close-up of the Quantum Eraser development kit setup",
-      caption: "Quantum Eraser Demonstration Array",
       category: "Lab Infrastructure",
     },
     {
       src: "./images/Lab Photos/qcclab2.jpg",
       alt: "Another view of the lab's dedicated computation racks",
-      caption: "Dedicated High-Performance Workstations",
       category: "Lab Infrastructure",
     },
     {
       src: "./images/Lab Photos/qcclab3.jpg",
       alt: "Laser alignment on topological quantum optics testbed",
-      caption: "Topological Phase Alignment Bench",
       category: "Lab Infrastructure",
     },
     {
       src: "./images/Lab Photos/qcclab1.jpg",
       alt: "Cryogenic vacuum cooling pump control instrumentation",
-      caption: "Superconductive Temperature Controller",
       category: "Lab Infrastructure",
     },
     {
       src: "./images/Lab Photos/qcclab5.jpg",
       alt: "Close look at localized quantum key distribution system modules",
-      caption: "QKD Peripheral Distribution Node",
       category: "Lab Infrastructure",
     },
     {
       src: "./images/Lab Photos/qcclab6.jpg",
       alt: "Classical-Quantum hybrid processing server arrays",
-      caption: "Co-Processing Simulation Mainframe",
       category: "Lab Infrastructure",
     },
 
@@ -51,31 +44,26 @@ export default function Gallery() {
     {
       src: "./images/student life/image7.jpg",
       alt: "Students collaborating on a quantum circuit block layout",
-      caption: "Collaborative Research in Action",
       category: "Student Life",
     },
     {
       src: "./images/student life/image8.jpg",
       alt: "A student presenting their algorithmic research findings",
-      caption: "Student Research Symposium Presentation",
       category: "Student Life",
     },
     {
       src: "./images/student life/image9.jpg",
       alt: "Scholars analyzing quantum circuit compilation errors on monitor",
-      caption: "Circuit Optimization Peer Analysis",
       category: "Student Life",
     },
     {
       src: "./images/student life/image12.jpg",
       alt: "Group brainstorm around blackboard regarding quantum mechanics",
-      caption: "Weekly Algorithmic Framework Ideation",
       category: "Student Life",
     },
     {
       src: "./images/student life/image7.jpg",
       alt: "Informal post-graduate technical discussion inside the research center",
-      caption: "Interdisciplinary Scholar Networking",
       category: "Student Life",
     },
 
@@ -83,118 +71,100 @@ export default function Gallery() {
     {
       src: "./images/events and Hackthon Photo/event1.jpg",
       alt: "Students participating in a hands-on Qiskit workshop",
-      caption: "Hands-on Qiskit Software Boot Camp",
       category: "Events & Workshops",
     },
     {
       src: "./images/events and Hackthon Photo/event3.jpg",
       alt: "Guest lecture presentation from an international industry expert",
-      caption: "Industry Expert General Guest Lecture",
       category: "Events & Workshops",
     },
     {
       src: "./images/events and Hackthon Photo/event4.jpg",
       alt: "Panelists speaking at the Quantum Applications Conclave",
-      caption: "Two-Day Conclave Research Panel",
       category: "Events & Workshops",
     },
     {
       src: "./images/events and Hackthon Photo/seminor Photo/event5.jpeg",
       alt: "Audience watching technical presentation on secure quantum keys",
-      caption: "National Seminar on Quantum Cryptography",
       category: "Events & Workshops",
     },
     {
       src: "./images/events and Hackthon Photo/seminor Photo/event1.jpeg",
       alt: "Professor Amlan delivering core lecture to vertical faculty members",
-      caption: "Prof. Amlan Core Technical Lecture Series",
       category: "Events & Workshops",
     },
     {
       src: "./images/ieee-symposium-1.jpg",
       alt: "Group photograph from Computer Society India Symposium event",
-      caption: "CSI / IEEE Computer Society Symposium",
       category: "Events & Workshops",
     },
     {
       src: "./images/hackathon-kickoff-1.jpg",
       alt: "Organizers addressing students at the opening of Quantathon",
-      caption: "Quantathon Main Arena Kickoff Session",
       category: "Events & Workshops",
     },
     {
       src: "./images/virtual-webinar-1.jpg",
       alt: "Live streaming session with global network security engineers",
-      caption: "International Post-Quantum Cryptography Sync",
       category: "Events & Workshops",
     },
 
-    // --- INDUSTRIAL VISITS (3 items) ---
+    // --- INDUSTRIAL VISITS (4 items) ---
     {
       src: "./images/Lab Visits Photo/labv1.jpg",
       alt: "Students and faculty visiting a national quantum research laboratory",
-      caption: "National Laboratory Infrastructure Briefing",
       category: "Industrial Visits",
     },
     {
       src: "./images/Lab Visits Photo/labv2.jpg",
       alt: "Group observing industrial supercomputing nodes on-site",
-      caption: "Industrial Supercomputing Center Tour",
       category: "Industrial Visits",
     },
     {
       src: "./images/Lab Visits Photo/labv6.jpg",
       alt: "Interaction session with enterprise quantum hardware engineers",
-      caption: "Enterprise Hardware Division Engagement",
       category: "Industrial Visits",
     },
     {
       src: "./images/Lab Visits Photo/labv7.jpg",
       alt: "Interaction session with enterprise quantum hardware engineers",
-      caption: "Enterprise Hardware Division Engagement",
       category: "Industrial Visits",
     },
+
     // --- ACHIEVEMENTS (7 items) ---
     {
       src: "./images/award-ceremony-1.jpg",
       alt: "Students receiving an award shield at a tech competition",
-      caption: "Quantathon 1.0 Championship Winners",
       category: "Achievements",
     },
     {
       src: "./images/award-ceremony-2.jpg",
       alt: "Team holding cash prize cheque at Quantathon 2.0 finale",
-      caption: "Quantathon 2.0 Grand Finale Winners",
       category: "Achievements",
     },
     {
       src: "./images/patent-filing-1.jpg",
       alt: "Certificate displaying a breakthrough research publication recognition",
-      caption: "High-Impact Cryptographic Patent Filing",
       category: "Achievements",
     },
     {
       src: "./images/grant-approval-1.jpg",
       alt: "Faculty members posing with institutional funding grant notification",
-      caption: "National Research Funding Endowment Award",
       category: "Achievements",
     },
     {
       src: "./images/ieee-best-paper-1.jpg",
       alt: "Researcher accepting best paper presentation certificate at summit",
-      caption: "IEEE Best Research Paper Distinction",
       category: "Achievements",
     },
     {
       src: "./images/global-hack-win-1.jpg",
       alt: "SRMIST students holding international hackathon trophies",
-      caption: "Global Quantum Hackathon Laurels",
       category: "Achievements",
     },
     {
       src: "./images/quantathon-3-winners.jpg",
       alt: "Winning team celebrating at Quantathon 3.0 award stage",
-      caption: "Quantathon 3.0 Core Category Champions",
       category: "Achievements",
     }
   ];
@@ -305,13 +275,10 @@ export default function Gallery() {
                 </div>
                 {/* Gold Highlight Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-[#050402]/95 via-black/30 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-300 flex items-end">
-                  <div className="p-5 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300 w-full">
-                    <span className="text-[10px] font-black uppercase tracking-widest text-amber-400 block mb-1 drop-shadow-[0_0_5px_rgba(251,191,36,0.5)] font-mono">
+                  <div className="p-5 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300 w-full text-center">
+                    <span className="text-xs font-black uppercase tracking-widest text-amber-400 block drop-shadow-[0_0_5px_rgba(251,191,36,0.5)] font-mono">
                       {image.category}
                     </span>
-                    <p className="text-white font-bold text-base leading-tight uppercase tracking-wide">
-                      {image.caption}
-                    </p>
                   </div>
                 </div>
               </div>
@@ -331,11 +298,11 @@ export default function Gallery() {
             onClick={e => e.stopPropagation()}
           >
             {/* Image Viewer Wrapper */}
-            <div className="bg-black/40 flex items-center justify-center max-h-[70vh]">
+            <div className="bg-black/40 flex items-center justify-center max-h-[75vh]">
               <img
                 src={currentLightboxImage.src}
                 alt={currentLightboxImage.alt}
-                className="w-auto h-auto max-w-full max-h-[70vh] object-contain p-2" 
+                className="w-auto h-auto max-w-full max-h-[75vh] object-contain p-2" 
                 onError={(e) => {
                   e.target.onerror = null;
                   e.target.src = "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 24 24' fill='none' stroke='%2334230b' stroke-width='1'><rect width='22' height='22' x='1' y='1' rx='2'/><path d='m22 13-3.296-3.296a1 1 0 0 0-1.408 0L13.5 13.5m0 0-3.296-3.296a1 1 0 0 0-1.408 0L4 14'/><circle cx='8' cy='8' r='1'/></svg>";
@@ -344,13 +311,10 @@ export default function Gallery() {
             </div>
             
             {/* Context Meta Block */}
-            <div className="p-5 bg-[#0a0904] border-t border-amber-900/30 text-center">
-              <span className="text-xs font-bold uppercase tracking-widest text-amber-500 block mb-1 font-mono">
+            <div className="p-4 bg-[#0a0904] border-t border-amber-900/30 text-center">
+              <span className="text-xs font-bold uppercase tracking-widest text-amber-500 block font-mono">
                 {currentLightboxImage.category}
               </span>
-              <h4 className="text-lg font-bold text-amber-100 uppercase tracking-wide">
-                {currentLightboxImage.caption}
-              </h4>
             </div>
 
             {/* Close Button */}
