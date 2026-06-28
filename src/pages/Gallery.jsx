@@ -6,37 +6,30 @@ export default function Gallery() {
     // --- LAB INFRASTRUCTURE (7 items) ---
     {
       src: "./images/Lab Photos/qcclab.jpg",
-      alt: "Wide shot of the quantum computing lab workstations",
       category: "Lab Infrastructure",
     },
     {
       src: "./images/Lab Photos/qcclab4.jpg",
-      alt: "Close-up of the Quantum Eraser development kit setup",
       category: "Lab Infrastructure",
     },
     {
       src: "./images/Lab Photos/qcclab2.jpg",
-      alt: "Another view of the lab's dedicated computation racks",
       category: "Lab Infrastructure",
     },
     {
       src: "./images/Lab Photos/qcclab3.jpg",
-      alt: "Laser alignment on topological quantum optics testbed",
       category: "Lab Infrastructure",
     },
     {
       src: "./images/Lab Photos/qcclab1.jpg",
-      alt: "Cryogenic vacuum cooling pump control instrumentation",
       category: "Lab Infrastructure",
     },
     {
       src: "./images/Lab Photos/qcclab5.jpg",
-      alt: "Close look at localized quantum key distribution system modules",
       category: "Lab Infrastructure",
     },
     {
       src: "./images/Lab Photos/qcclab6.jpg",
-      alt: "Classical-Quantum hybrid processing server arrays",
       category: "Lab Infrastructure",
     },
 
