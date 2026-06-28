@@ -43,128 +43,104 @@ export default function Gallery() {
     // --- STUDENT LIFE (5 items) ---
     {
       src: "./images/student life/image7.jpg",
-      alt: "Students collaborating on a quantum circuit block layout",
       category: "Student Life",
     },
     {
       src: "./images/student life/image8.jpg",
-      alt: "A student presenting their algorithmic research findings",
       category: "Student Life",
     },
     {
       src: "./images/student life/image9.jpg",
-      alt: "Scholars analyzing quantum circuit compilation errors on monitor",
       category: "Student Life",
     },
     {
       src: "./images/student life/image12.jpg",
-      alt: "Group brainstorm around blackboard regarding quantum mechanics",
       category: "Student Life",
     },
     {
       src: "./images/student life/image7.jpg",
-      alt: "Informal post-graduate technical discussion inside the research center",
       category: "Student Life",
     },
 
     // --- EVENTS & WORKSHOPS (8 items) ---
     {
       src: "./images/events and Hackthon Photo/event1.jpg",
-      alt: "Students participating in a hands-on Qiskit workshop",
       category: "Events & Workshops",
     },
     {
       src: "./images/events and Hackthon Photo/event3.jpg",
-      alt: "Guest lecture presentation from an international industry expert",
       category: "Events & Workshops",
     },
     {
       src: "./images/events and Hackthon Photo/event4.jpg",
-      alt: "Panelists speaking at the Quantum Applications Conclave",
       category: "Events & Workshops",
     },
     {
       src: "./images/events and Hackthon Photo/seminor Photo/event5.jpeg",
-      alt: "Audience watching technical presentation on secure quantum keys",
       category: "Events & Workshops",
     },
     {
       src: "./images/events and Hackthon Photo/seminor Photo/event1.jpeg",
-      alt: "Professor Amlan delivering core lecture to vertical faculty members",
       category: "Events & Workshops",
     },
     {
       src: "./images/ieee-symposium-1.jpg",
-      alt: "Group photograph from Computer Society India Symposium event",
       category: "Events & Workshops",
     },
     {
       src: "./images/hackathon-kickoff-1.jpg",
-      alt: "Organizers addressing students at the opening of Quantathon",
       category: "Events & Workshops",
     },
     {
       src: "./images/virtual-webinar-1.jpg",
-      alt: "Live streaming session with global network security engineers",
       category: "Events & Workshops",
     },
 
     // --- INDUSTRIAL VISITS (4 items) ---
     {
       src: "./images/Lab Visits Photo/labv1.jpg",
-      alt: "Students and faculty visiting a national quantum research laboratory",
       category: "Industrial Visits",
     },
     {
       src: "./images/Lab Visits Photo/labv2.jpg",
-      alt: "Group observing industrial supercomputing nodes on-site",
       category: "Industrial Visits",
     },
     {
       src: "./images/Lab Visits Photo/labv6.jpg",
-      alt: "Interaction session with enterprise quantum hardware engineers",
       category: "Industrial Visits",
     },
     {
       src: "./images/Lab Visits Photo/labv7.jpg",
-      alt: "Interaction session with enterprise quantum hardware engineers",
       category: "Industrial Visits",
     },
 
     // --- ACHIEVEMENTS (7 items) ---
     {
       src: "./images/award-ceremony-1.jpg",
-      alt: "Students receiving an award shield at a tech competition",
       category: "Achievements",
     },
     {
       src: "./images/award-ceremony-2.jpg",
-      alt: "Team holding cash prize cheque at Quantathon 2.0 finale",
       category: "Achievements",
     },
     {
       src: "./images/patent-filing-1.jpg",
-      alt: "Certificate displaying a breakthrough research publication recognition",
       category: "Achievements",
     },
     {
       src: "./images/grant-approval-1.jpg",
-      alt: "Faculty members posing with institutional funding grant notification",
       category: "Achievements",
     },
     {
       src: "./images/ieee-best-paper-1.jpg",
-      alt: "Researcher accepting best paper presentation certificate at summit",
       category: "Achievements",
     },
     {
       src: "./images/global-hack-win-1.jpg",
-      alt: "SRMIST students holding international hackathon trophies",
       category: "Achievements",
     },
     {
       src: "./images/quantathon-3-winners.jpg",
-      alt: "Winning team celebrating at Quantathon 3.0 award stage",
       category: "Achievements",
     }
   ];
