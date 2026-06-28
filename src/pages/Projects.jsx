@@ -5,23 +5,39 @@ import { Link } from 'react-router-dom';
 export default function Projects() {
   const projectsData = [
     {
-      title: "Quantum Random Number Generator (QRNG)",
+      title: "Data Projection Using QKD - Dr M Gayathri ",
       status: "Completed",
     },
     {
-      title: "Quantum Key Distribution (QKD) Protocol",
+      title: "Lung cancer prediction using qml - Dr Nalini. S ",
       status: "Completed",
     },
     {
-      title: "Quantum Machine Learning for Medical Diagnosis",
+      title: "Protein folding using Quantum algorithms - Dr V Raghavendra",
+      status: "Completed"
+    },
+    {
+      title:"Qgpt -  Dr M Gayathri ",
+      status:"Completed"
+    },
+    {
+      title:"Finacial transaction security using qrng - Dr GK Sandhia",
+      status:"Completed"
+    },
+    {
+      title: "Image classification using quantum - Dr M Gayathri",
       status: "Ongoing",
     },
     {
-      title: "Quantum Algorithms for Optimization Problems",
+      title: "Sentimental analysis using Grovers  - Dr R Thilagavathy",
       status: "Ongoing",
     },
     {
-      title: "Quantum Neural Networks (QNN)",
+      title: "QLarge language Model - Dr M Gayathri",
+      status: "Ongoing",
+    },
+    {
+      title: "Quantum Portfolio - Dr M Gayathri ",
       status: "Ongoing",
     },
   ];
