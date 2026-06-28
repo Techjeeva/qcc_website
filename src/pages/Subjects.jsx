@@ -112,7 +112,7 @@ export default function Subjects() {
               
               {/* Category Header Label */}
               <h3 className="text-xs font-black uppercase tracking-[0.25em] text-amber-400/80 font-mono pl-2">
-                // {section.groupName}
+                 {section.groupName}
               </h3>
 
               {/* Accordion Container Wrapper */}
