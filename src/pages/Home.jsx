@@ -23,18 +23,15 @@ export default function Home() {
           
           {/* Top Tag Component */}
           <span className="uppercase text-amber-400 text-xs font-black mb-5 block tracking-[0.3em] drop-shadow-[0_0_12px_rgba(251,191,36,0.4)]">
-            Center of Excellence
-          </span>
+            SRM INSTITUTE OF SCIENCE AND TECHNOLOGY
+            </span>
           
           {/* Main Integrated Heading */}
           <h1 className="text-white font-black text-4xl sm:text-5xl lg:text-6xl mb-6 uppercase tracking-tight max-w-4xl leading-[1.15]">
             Welcome to the <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 via-amber-200 to-amber-400 drop-shadow-[0_2px_15px_rgba(251,191,36,0.3)]">
-              Center for quantum communication and computing
+              quantum communication lab
             </span> <br />
-            <span className="text-xs sm:text-sm lg:text-base tracking-[0.25em] block mt-4 text-amber-100/40 font-mono uppercase">
-             SRMIST-KTR
-            </span>
           </h1>
           
           {/* Accent Line Separator */}
@@ -42,7 +39,7 @@ export default function Home() {
 
           {/* Core Lab Description (Fixed missing word 'Center') */}
           <p className="text-amber-100/70 text-base sm:text-lg max-w-2xl leading-relaxed font-medium mb-12">
-            The Center for Quantum Communication and Computing at SRMIST serves as a world-class hub 
+            The quantum communication lab at SRMIST serves as a world-class hub 
             for investigating next-generation computational paradigms, localized algorithmic 
             frameworks, and secure cryptographic communication channels.
           </p>

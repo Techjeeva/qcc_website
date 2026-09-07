@@ -15,7 +15,7 @@ export default function QuantumClub() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">
           <h2 className="text-4xl font-black mb-4 text-white uppercase tracking-tight">
-            SRMIST Center for Quantum Communication and Computing Club
+            SRMIST Quantum Communication Lab Club
           </h2>
           <div className="h-1 w-16 bg-amber-500 mx-auto mb-6 rounded-full"></div>
           <p className="text-lg text-amber-100/70 leading-relaxed">
@@ -35,7 +35,7 @@ export default function QuantumClub() {
               Our Mission
             </h3>
             <p className="text-amber-100/70 text-lg leading-relaxed">
-              The SRMIST Quantum Communication and Computing Club aims to foster a collaborative environment for students to learn about, discuss, and experiment with quantum information science. We strive to demystify quantum concepts and explore their potential applications through hands-on activities and engaging discussions.
+              The SRMIST Quantum Communication Lab Club aims to foster a collaborative environment for students to learn about, discuss, and experiment with quantum information science. We strive to demystify quantum concepts and explore their potential applications through hands-on activities and engaging discussions.
             </p>
           </div>
 

@@ -31,3 +31,11 @@ Styling Engine: Tailwind CSS v3+ (Utility-first, customized arbitrary configurat
 Routing System: React Router DOM v6 (Secure client-side navigation paths)
 
 Visual Enhancements: Native CSS Backdrop-Blurs & PostCSS optimization matrices
+
+npm run build 
+git add .
+git commit -m "fixed github pages"
+git push origin main --force
+
+
+npm run deploy       

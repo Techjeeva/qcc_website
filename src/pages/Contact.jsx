@@ -37,7 +37,7 @@ export default function Contact() {
                   <div>
                     <h4 className="font-bold text-sm text-amber-400 uppercase tracking-wider mb-1">Address</h4>
                     <p className="text-amber-100/70 text-sm leading-relaxed">
-                      Center for Quantum Communication and Computing, Dept. of Computing Technologies<br />
+                     Quantum Communication Lab, Dept. of Computing Technologies<br />
                       SRM Institute of Science and Technology<br />
                       Kattankulathur, Chengalpattu, Tamil Nadu – 603203
                     </p>
@@ -51,8 +51,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-bold text-sm text-amber-400 uppercase tracking-wider mb-1">Email</h4>
-                    <a href="mailto:srmqcc@gmail.com" className="text-white text-base font-semibold hover:text-amber-400 transition-colors break-all">
-                     srmqcc@gmail.com
+                    <a href="mailto:qcsrmist@gmail.com" className="text-white text-base font-semibold hover:text-amber-400 transition-colors break-all">
+                     qcsrmist@gmail.com
                     </a>
                   </div>
                 </div>
