@@ -28,13 +28,7 @@ function App() {
       <div className="flex flex-col min-h-screen relative"> {/* Base layout */}
         
         {/* --- Global Background Elements --- */}
-        <video
-          autoPlay loop muted playsInline
-          src="/qcc_website/quantum_bg_video.mp4" // Path relative to the 'public' folder
-          className="fixed top-0 left-0 w-full h-full object-cover z-0" // Fixed position, lowest layer
-          title="Abstract quantum background video"
-        ></video>
-        <div className="fixed top-0 left-0 w-full h-full bg-black/50 z-10"></div> {/* Overlay */}
+        {/* Quantum pages now provide their own immersive visual layers. */}
         {/* --- End Global Background Elements --- */}
 
         <ScrollToTop /> {/* Scrolls viewport to top on route change */}
