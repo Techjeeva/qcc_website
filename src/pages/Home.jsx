@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import QuantumHero from "../components/QuantumHero";
 import "../components/QuantumHero.css";
+import QuantumChannel from "../components/QuantumChannel";
+import "../components/QuantumChannel.css";
 import Equipments from "./Equipments";
 import Subjects from "./Subjects";
 import Contact from "./Contact";
@@ -13,6 +15,7 @@ export default function Home() {
       <QuantumHero />
 
       <div className="relative z-20 space-y-0">
+        <QuantumChannel />
         <section className="quantum-intro">
           <div className="quantum-section-label">01 / THE LAB</div>
           <h2>Where information<br /><span>becomes quantum.</span></h2>
